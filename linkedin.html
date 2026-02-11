@@ -1,0 +1,901 @@
+<html>
+	<head>
+		<title>
+			LinkedIn 
+		</title>
+		<style>
+		nav{
+			display:flex;
+			width:100%;
+			height:60px;
+			position:fixed;
+			z-index:5;
+			background-color:white;
+			
+		}
+		
+		
+		.invisible-scrollbar::-webkit-scrollbar {
+		  display: none;
+		}
+	
+		.btn-main:hover{
+			background-color:blue;
+			color:white;
+			border:1px solid blue;
+		}
+		
+		.btn-act:hover{
+
+			border:3px solid green;
+		}
+		
+		
+		
+		.sub-div{
+			position:relative;
+			
+		}
+		.div{
+				margin-top:8px;
+				position:absolute;
+				display:none;
+				width:910px; 
+				height:142px;
+				
+		}
+		.sub-div:hover .div{
+				display:block;
+		}
+		
+		
+		
+		
+		
+		.sub-div-two{
+			position:relative;
+			
+			
+		}
+		.div-two{
+				margin-top:8px;
+				position: absolute;
+				display:none;
+				width:910px;
+				height:130px;
+				left:105px;
+				
+		}
+		.sub-div-two:hover .div-two{
+				display:block;
+		}
+
+		
+		</style>
+		<link rel="styelsheet"  href="" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+<body style="overflow-x:hidden;margin:0;padding:0;background-color:#f9f4f1;">
+
+<nav>
+	<div style="width:30%; margin-left:200px; display:flex; margin-top:5px;">
+		<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\174857.png" width="35px"  height="35px" style="padding-top:0px; margin-right:10px;">
+		<button style="width:300px; height:40px; border-radius:50px ; text-align:left; font-size:17px;"> Search </button>
+	</div>
+	
+	<div style="width:70%; margin-top:7px; display:flex;">
+	
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_home.html" style="color:black; text-decoration:none;"><li class="black home font grey" style="list-style:none;" ><i class="ri-home-4-fill" style="font-size:23px; margin-left:6px"></i><br><span class="small">Home</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_network.html" style="color:black; text-decoration:none;"><li class="black font grey" style="margin-left:20px; list-style:none; "><i class="ri-group-3-fill" style="font-size:23px; margin-left:29px" ></i><br> <span class="small" >My Network</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_job.html" style="color:black; text-decoration:none;"><li class="black font grey" style="margin-left:28px; list-style:none;"><i class="ri-briefcase-4-fill" style="font-size:23px" ></i><br><span class="small" >Jobs</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_message.html" style="color:black; text-decoration:none;"><li class="black font grey" style="margin-left:20px; list-style:none;"><i class="ri-chat-1-fill" style="font-size:23px; margin-left:19px" ></i><br><span class="small" >Messaging</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_notification.html" style="color:black; text-decoration:none;"><li class="black font grey" style="margin-left:22px; list-style:none;"><i class="ri-notification-3-fill" style="font-size:23px; margin-left:22px"></i><br><span class="small" >Notifications</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin.html" style="color:black; text-decoration:none;"><li class="grey top" style="margin-left:22px; list-style:none;"><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" class="profile-pic" style="border-radius:25px; width:23px; height:22px; "><br><span class="small"> Me </span><i class="ri-arrow-down-s-fill"></i></li></a>
+		
+		<div>
+			<hr style="height:40px;  margin-left:10px; margin-top:0px">
+		</div>
+		<li class="black font grey" style="margin-left:22px; list-style:none;"><i class="ri-grid-fill" style="font-size:23px; margin-left:25px"></i><br><span class="small">For Business</span> <i class="ri-arrow-down-s-fill"></i></li>
+		<li class="black font bottom" style="margin-left:22px; list-style:none;"><i style="color:goldenrod; font-size:23px; margin-left:45px" class="ri-checkbox-multiple-blank-fill"></i><br><span class="small">Try Premium for ₹0</span></li>
+		
+		
+	</div>
+	<hr>
+	
+</nav>
+<br><br><br><br>
+
+<div style=" margin-top:0px;  position:relative; z-index:1">
+	<section>
+		<div class="invisible-scrollbar"style="width:60%; float:left; height:620px; border-radius:10px; padding:10px; overflow:auto; margin-left:130px;">
+			
+			<div style="border:1px solid #cbcbcb ;height:620px; border-radius:10px; background-color:white">
+				
+				<div style="position:relative;background:#456a82;background: linear-gradient(90deg, rgba(69, 106, 130, 1) 0%, rgba(84, 113, 140, 1) 50%, rgba(214, 241, 255, 1) 100%); height:200px; margin:0%; padding:0%; border-radius:8px; ">
+					
+				
+					<div style="position:absolute ; top:105px; left:30px">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\profile.jpeg" width="147px" height="150px" style="border-radius:50%; border:3px solid white">
+					</div>
+				</div>
+				<br><br>
+				<div style="display:flex;height:55px;">
+					<div style="width:60%;">
+						<p style="margin-top:34px; font-size:30px ; margin-left:20px"> <b>kashish Jain</b> </p>
+					</div>
+					
+					<div style="display:flex; margin-top:30px;">	
+						<div style=" width:10%;margin-left:80px;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mgmjnec_logo.jpeg"  height="50px" width="45px" style="border-radius:100%;">
+						</div>
+						
+						<div style="margin-left:20px; margin-top:7px;">
+							<b>  M.G.M's Jawaharlal Nehru <br> College Of Enginnering </b>
+						</div>
+					</div>
+						
+				</div>
+				
+				
+				<p style="font-size:19px;margin-left:20px; height:34px;">Pursuing B.Tech in Information Technology at Chhatrapati Sambhaji <br> nagar Institute, passionate about technology and innovation.</p>
+				<p style="font-size:19px;margin-left:20px; height:14px;">Aurangabad, Maharashtra, India .<a href="" style="text-decoration:none"> Contact info </a></p>
+				<p> <a href="" style="text-decoration:none ; font-size:19px;margin-left:20px"> 423 connections  </a></p> 
+				
+				
+				<div style="display:flex;">
+					<button class="btn-main"style="border-radius:25px;  padding:10px; width:100px; margin-left:20px; font-size:15px;"> Open to</button>
+					<button class="btn-main"style=" border-radius:25px;  padding:10px; width:190px; margin-left:20px;font-size:15px;"> Add profile section</button>
+					<button class="btn-main"style=" border-radius:25px;  padding:10px; width:140px; margin-left:20px;font-size:15px;"> Enhanced profile</button>
+					<button class="btn-main"style=" border-radius:25px; padding:10px; width:100px; margin-left:20px;font-size:15px;"> resources</button>
+				</diV><br>
+				
+				
+				<div style="display:flex;">
+				
+					<div style="width:45%;border:1px solid #cbcbcb ;height:90px; border-radius:10px; background-color:lightblue; margin-left:23px; ">
+						<p style="font-size:15px;margin-left:20px; height:7px;"> <b>Open to work </b></p>
+						<p style="font-size:15px;margin-left:20px; height:7px;">Assistant roles </p>
+						<a href="" style="text-decoration:none ; font-size:15px;margin-left:20px">Show details </a>
+					</diV>
+					
+					
+					<div style="width:45%;border:1px solid #cbcbcb ;height:90px; border-radius:10px;  margin-left:29px; ">
+						<p style="font-size:15px;margin-left:20px; height:7px;"> <b>Tell non-profits </b> you're intrested in getting</p>
+						<p style="font-size:15px;margin-left:20px; height:7px;">involved with your time and skills</p>
+						<a href="" style="text-decoration:none ; font-size:15px;margin-left:20px">Get started</a>
+					</div>
+				
+				</div>
+				
+			</div>
+			
+			
+			
+			<br>
+			<div style="border: 1px solid #cbcbcb ; height:230px; border-radius:10px;background-color:white; ">
+				<div style="margin-left:29px;">
+					<p style="font-size:22px; height:0px"> Analytics </p>
+					<div style="display:flex;  height:40px">
+						<div style="width:3%; ">
+							<li class="black font grey" style="margin-top:18px; list-style:none; "><i class="ri-eye-fill"></i> </li>
+						</div>
+						
+						<div style=" margin-right:30px">
+							<p>Private to you</p>
+						
+						</div>
+					</div>
+		
+					<div style="display:flex; height:100px">
+							<div style="width:30%;margin-right:45px; height:90px;">
+								<div style="display:flex;  height:40px">
+									<div style="width:3%; ">
+										
+										<li class="black font grey" style="margin-top:18px; list-style:none; "><i class="ri-group-3-fill" ></i><br> </li>
+									</div>
+									
+									<div style=" margin-left:15px">
+										<p style="height:5px;"><b>226 profile views  </b></p>
+										<p> Discover who's viewed your<br> profile</p>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div style="width:30%; margin-right:45px; height:90px;">
+								<div style="display:flex;  height:40px">
+									<div style="width:3%; ">
+											
+										<li class="black font grey" style="margin-top:18px; list-style:none; "><i class="ri-bar-chart-fill"></i></li>
+									</div>
+									
+									<div style=" margin-left:15px">
+										<p style="height:5px;"><b>35 post impressions </b></p>
+										<p> Checks oiut who's engaging with <br> your post <br> <span style="color:grey"> Past 7 days</span></p>
+									</div>
+								</div>
+							
+							</div>
+
+							
+							<div style="width:30%; margin-right:45px; height:90px; ">
+								<div style="display:flex;  height:40px">
+									<div style="width:3%; ">
+											
+										<li class="black font grey" style="margin-top:18px; list-style:none; "><i class="ri-search-line"></i> </li>
+									</div>
+									
+									<div style=" margin-left:15px">
+										<p style="height:5px;"><b>25 search apperances </b></p>
+										<p> See how often you appear in<br>search results</p>
+									</div>
+								</div>
+							</div>
+					</div>
+					
+				
+
+				</div>
+				<div style="width;100%">	
+					<hr>
+				</div>
+				
+				<center> Show  all analytics </center>
+			</div>
+			
+			<br>
+
+			<div style="border:1px solid #cbcbcb ; height:200px;border-radius:10px;background-color:white;">
+				<div style="font-size:16px; padding:2px;margin-left:29px;">
+					
+					<h2>About </h2>
+					<p>
+						Results-driven Computer Engineering student at Maharashtra Institute of Technology, adept in various programming <br>
+						languages and well-versed in the intricacies of the software development life cycle. Backed by practical experience as a <br>
+						Java Programmer during an internship at Sankalp Enterprises. Eager to embark on a challenging internship, leveraging my <br>
+						strong analytical and problem-solving skills. Enthusiastic about pushing the boundaries of technology and contributing to <br>
+						impactful projects. Seeking opportunities to grow and thrive in the ever-evolving landscape of computer engineering.
+					</p>
+				</div>
+			</div>
+			
+			
+			
+			<br>
+			<div style="border: 1px solid #cbcbcb  ; height:690px; border-radius:10px; background-color:white;">
+				
+				<div style="display:flex;height:75px;">
+					<div style="width:60%;">
+						<p style="font-size:22px ;height:7px; margin-left:20px"> <b>Activity</b> </p>
+						<a style="text-decoration:none ; margin-left:20px; color:blue; font-size:15px">  421 followers </a>
+					</div>
+				
+					<div style="margin-left:160px; margin-top:27px;">
+						<button style="width:150px; height:35px; border-radius:25px; border:1px solid blue ; color:blue"> Create a post </button>
+					</div>	
+				</div>
+				
+				
+				<div style="display:flex;">
+					<button style="border-radius:25px; color:white; background-color:green;  padding:10px; width:80px; margin-left:10px; font-size:12px;"> Posts</button>
+					<button class="btn-act" style=" border-radius:25px;  padding:10px; width:100px; margin-left:10px;font-size:12px;"> Comments</button>
+					<button class="btn-act" style=" border-radius:25px;  padding:10px; width:80px; margin-left:10px;font-size:12px;"> Videos</button>
+				</div>
+				<br>
+				
+				<div style="display:flex ; height:470px; border-radius:10px; background-color:white; margin-left:30px">
+					<div style="width:45%; border: 1px solid #cbcbcb ;  border-radius:10px; margin-right:37px ">
+						
+								<div style="display:flex;  height:70px">
+									<div style="width:13%; margin-left:10px">
+										<p><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" width="50px" height="50px"  style="border-radius:25px">
+									</div>
+									
+									<div style=" margin-left:17px">
+										<p style="height:5px;"><b>kashish jain </b></p>
+										<p style="color:grey">Pursuing B.Tech in Information technology...  <br> 3mo . </p>
+									</div>
+								</div>
+								
+								
+								<p style="margin-left:10px; height:3px">
+									My First peoject in web development where I <br> created a simple Amazon clone using HTML ...
+									<a  style="text-decoration:none ; margin-left:20px; color:grey; ">more </a>
+								</p>
+								
+								<div style="height:300px; width:370px; margin-left:10px;border-radius:20px; ">
+									<video controls loop style=" width:100%; height:100%; border-radius:5px;">
+										<source src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\output_progressive_fb44d597-337d-4a14-a0c1-48e0328c79b8.mp4" type="video/mp4">
+									</video>
+								</div>
+								
+								<hr>
+								
+							<div style="display:flex;">
+								<div style=" padding:5px; display:flex; margin-left:20px">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\like.jpeg" width="20px"  height="20px" style="margin-left:15px;">
+									
+								</div>
+								
+								
+								<div style=" padding:5px; display:flex; margin-top:5px; margin-left:50px">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\comment.jpeg" width="20px"  height="20px" style="margin-left:15px;">
+									
+								</div>
+								
+								
+								<div style=" padding:5px; display:flex; margin-top:5px; margin-left:50px">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\repost1.jpeg" width="20px"  height="20px" style="margin-left:15px;">
+									
+								</div>
+								
+								<div style=" padding:5px; display:flex;  margin-top:5px; margin-left:50px">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\send.jpeg" width="20px"  height="20px" style="margin-left:15px;">
+									
+								</div>
+							</div>
+					</div>
+					
+					<div style="width:45%; border: 1px solid #cbcbcb ; border-radius:10px;  ">
+								<div style="display:flex;  height:70px">
+									<div style="width:13%; margin-left:10px">
+										<p><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" width="50px" height="50px"  style="border-radius:25px">
+									</div>
+									
+									<div style=" margin-left:17px">
+										<p style="height:5px;"><b>kashish jain </b></p>
+										<p style="color:grey">Pursuing B.Tech in Information technology...  <br> 3mo . </p>
+									</div>
+								</div>
+								
+								
+								<p style="margin-left:10px; height:3px">
+									My second peoject in web development where I <br> created a simple Amazon clone using HTML ...
+									<a  style="text-decoration:none ; margin-left:20px; color:grey; ">more </a>
+								</p>
+								
+								<div style="height:300px; width:370px; margin-left:10px;border-radius:20px; ">
+									<video controls loop style=" width:100%; height:100%; border-radius:5px;">
+										<source src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\output_progressive_3827ad2e-2393-4f70-8edc-f06d2500b919.mp4" type="video/mp4">
+									</video>
+								</div>
+								
+								<hr>
+								
+							<div style="display:flex;">
+								<div style=" padding:5px; display:flex; margin-left:20px">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\like.jpeg" width="20px"  height="20px" style="margin-left:15px;">
+									
+								</div>
+								
+								
+								<div style=" padding:5px; display:flex; margin-top:5px; margin-left:50px">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\comment.jpeg" width="20px"  height="20px" style="margin-left:15px;">
+									
+								</div>
+								
+								
+								<div style=" padding:5px; display:flex; margin-top:5px; margin-left:50px">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\repost1.jpeg" width="20px"  height="20px" style="margin-left:15px;">
+									
+								</div>
+								
+								<div style=" padding:5px; display:flex;  margin-top:5px; margin-left:50px">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\send.jpeg" width="20px"  height="20px" style="margin-left:15px;">
+									
+								</div>
+							</div>
+								
+								
+				
+					</div>
+					
+				</div>
+				<br><br><hr>
+				<center> Show All posts -></center>
+		
+			</div>
+			<br>
+			
+			
+			<div style="border: 1px solid #cbcbcb  ; height:290px; border-radius:10px; background-color:white; ">
+				<h3 style="height:10px; margin-left:22px;">Experience</h3>
+			
+				<div style="display:flex;  height:96px; margin-left:22px;">
+					<div style="width:7%; ">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\sanvi.jpeg" width="54px" height="45px" style="margin-top:16px" >
+					</div>
+									
+					<div>
+						<p style="height:5px;"><b>Java Programmer</b></p>
+						<p style="color:grey">SANVI ENTERPRISE .internship <br> Sep 2023- Oct 2023.2 mos <br> Aurangabad, Maharashtra, India.Remote </p>
+					</div>
+				</div>
+				
+				<p style="margin-left:86px;">
+					As a Java Programmer at Sankalp Enterprises, we were responsible for developing, testing, and maintaining Java-<br>
+					based applications. role included designing and implementing software solutions, collaborating with cross-<br>
+					functional teams, and troubleshooting code issues and also likely participated in the full software development<br> 
+					life cycle, wrote efficient and maintainable code, and contributed to the improvement of existing systems
+				
+				</p>
+				
+				<p style="margin-left:86px;">
+					<b>Core Java, Java and +1  skill </b>
+				</p>
+			</div>
+			<br>
+			
+			<div style="border: 1px solid #cbcbcb  ; height:290px; border-radius:10px; background-color:white; ">
+				<h3 style="height:10px; margin-left:22px;">Education</h3>
+			
+				
+				
+					<div style="display:flex;  height:96px; margin-left:22px;">
+						<div style="width:7%; ">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mgmjnec_logo (1).jpeg" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div>
+							<p style="height:5px;"><b>M.G.M's Jawaharlal Nehru College of Engineering</b></p>
+							<p style="color:grey">Bachelor of Technology -BTech, computer Science <br> Aug 2024 - Sep 2027</p>
+						</div>
+					</div>
+					<hr>
+					<div style="display:flex;  height:96px; margin-left:22px;">
+						<div style="width:7%; ">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\MIT.png" width="44px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div>
+							<p style="height:5px;"><b>Maharashtra Institute of Technology</b></p>
+							<p style="color:grey ; height:22px"> Diploma in computer Engineering , computer Science <br>2020 </p>
+							
+							<p style="height:5px;"><b>Computer Science and object oriented programming(OOP)</b></p>
+							
+						</div>
+					</div>
+				
+			</div>
+			<br>
+			
+			
+			<div style="border: 1px solid #cbcbcb  ; height:185px; border-radius:10px; background-color:white; ">
+				<h3 style="height:23px; margin-left:22px;">Skills</h3>
+						
+					<p style="margin-left:22px; font-size:17px"><b> Cascading style sheets (CSS)</b></p>
+					<hr>
+					<p style="margin-left:22px; font-size:17px"> <b> Bootstrap (Framework)</b></p>
+					<hr>
+					<center> Show all 21 skills-> </center>
+						
+			</div>
+			<br>
+			
+			<div style="border: 1px solid #cbcbcb  ; height:265px; border-radius:10px; background-color:white; ">
+				<h3 style="height:23px; margin-left:22px;">Interests</h3>
+						
+				<!--<div style="display:flex;">
+					<a class="drop_one_interest" style="text-decoration:none; font-size:17px; margin-left:27px;"> Companies </a>
+					<a class="drop_two_interest" style="text-decoration:none; font-size:17px; margin-left:37px;"> Groups </a>
+					<a class="drop_three_interest" style="text-decoration:none; font-size:17px; margin-left:37px;"> Newsletters </a>
+					<a class="drop_four_interest" style="text-decoration:none; font-size:17px; margin-left:37px;"> Schools </a>
+				</div>-->
+				
+				<div style="display:flex; width:100%;">
+					<div class="main_drop_one_interest">
+						<span class="sub-div">
+							<a style="text-decoration:none; font-size:17px; margin-left:27px;"> Companies  </a>
+							
+								<div class="div">
+									<div style="display:flex; height:80px">
+											<div style="width:30%;margin-left:85px; height:90px;">
+												<div style="display:flex;  height:40px">
+													<div style="width:3%; margin-left:10px">
+														<p><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\deloitte_logo.jpeg" height="50px" height="50px" >
+													</div>
+													
+													<div style=" margin-left:55px">
+														<p style="height:5px; font-size:18px"><b>Deloitte </b></p>
+														<p style="color:grey"> 20,634,611 followers</p>
+														<button style="width:150px; height:35px; background-color:white; border:1px solid black; border-radius:25px; font-size:16px"> ✓ Following </button>
+													</div>
+												</div>
+											</div>
+											
+											
+											<div style="width:30%; margin-left:125px; height:90px;">
+												<div style="display:flex;  height:40px">
+													<div style="width:3%; ">
+														<p><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\Zoho_logo.jpeg" height="50px" height="50px" >
+													</div>
+													
+													<div style=" margin-left:55px">
+														<p style="height:5px; font-size:18px"><b>Zoho</b></p>
+														<p style="color:grey">2,471,969 followers</p>
+														<button style="width:150px; height:35px; background-color:white; border:1px solid black; border-radius:25px; font-size:16px"> ✓ Following </button>
+													</div>
+												</div>
+											
+											</div>
+									</div>
+								</div>
+						</span>
+					</div>
+					
+					
+					<div class="main_drop_two_interest">
+						<span class="sub-div-two">
+							<a style="text-decoration:none; font-size:17px; margin-left:27px;"> Groups   </a>
+							
+								<div class="div-two">
+									
+									<div style=" margin-left:65px">
+											<p style="height:5px; font-size:18px"><b>TFUG Chh.Sambhaji Nagar (Aurangabad)</b></p>
+											<p style="color:grey">334 members </p>
+											<button style="width:150px; height:35px; background-color:white; border:1px solid black; border-radius:25px; font-size:16px"> ✓ Joined </button>
+									</div>
+										
+								</div>
+							
+						</span>
+					</div>
+					
+					
+					
+					<div class="main_drop_two_interest">
+						<span class="sub-div-two">
+							<a style="text-decoration:none; font-size:17px; margin-left:27px; "> Newsletters </a>
+							
+								<div class="div-two">
+									
+									<div style=" margin-left:55px; margin-bottom:108px">
+											<p style="height:7px; font-size:18px;"><b>The Zoho bulletin</b></p>
+											<p style="color:black; height:22px; ">Our monthly Newsletters where we keep you <br> informed about all things zoho  </p>
+											<p style="color:grey; height:8px; ">Published monthly </p>
+											<button style="width:150px; height:35px; background-color:white; border:1px solid black; border-radius:25px; font-size:16px"> ✓ Joined </button>
+									</div>
+										
+								</div>
+							
+						</span>
+					</div>
+					
+					
+					
+					<div class="main_drop_four_interest">
+						<span class="sub-div">
+							<a style="text-decoration:none; font-size:17px; margin-left:27px;"> schools</a>
+							
+								<div class="div">
+									
+									<div style="display:flex;  height:40px">
+										<div style="width:3%; margin-left:10px">
+											<p><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mgmjnec_logo (1).jpeg"  height="50px" height="50px" >
+										</div>
+													
+										<div style=" margin-left:55px">
+											<p style="height:29px; font-size:18px"><b>M.G.M's Jawaharlal Nehru College of <br> Engineering</b></p>
+											<p style="color:grey">9,495 followers</p>
+											<button style="width:150px; height:35px; background-color:white; border:1px solid black; border-radius:25px; font-size:16px"> ✓ Following </button>
+										</div>
+									</div>
+									
+								</div>
+						</span>
+					</div>
+					
+					
+			
+				
+				</div>
+	
+		
+			</div>
+			
+
+		</div>
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		<div class="invisible-scrollbar "style="width:22%;  border-radius:10px; padding:10px; overflow-x:hidden; margin-left:40px; height:620px; overflow-y:auto;">
+
+			<div style="border: 1px solid #cbcbcb ;height:180px; padding:2px;border-radius:10px; background-color:white;">
+				<div style="margin-left:20px;">
+					<h3 style="height:10px"> Profile languages </h3>
+					<p style="color:grey"> English </p>
+				</div>
+				
+				<hr>
+				
+				<div style="margin-left:20px;">
+					<h3 style="height:10px"> Public Profile & URL </h3>
+					<p style="color:grey"> www.linkedin.com/in/kashish-jain-<br>b8a0322a4</p>
+				</div>
+			</div>
+			<br>
+			
+			<div style="border: 1px solid #cbcbcb ;height:250px; padding:2px;border-radius:10px; background-color:white;">
+				<center><p style="font-size:14px;"> Kashish , boost your job search with Premium </p></center>
+				
+				<div style="display:flex;">
+					<div style="width:40%;">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\profile.jpeg" width="90px" height="90px" style="border-radius:100%; margin-left:59px;">
+					</div>
+				
+					<div style="width:60%; margin-left:50px; ">
+						<p style="font-size:20px; margin-top:30px;"> Premium </p>
+					</div>
+				
+				</div>
+				
+				<center><p style="font-size:16px;"> See whos's viewed your profile in the last<br> 365 days </p></center>
+				<center><button style="border-radius:20px; width:130px; height:34px; color:blue; border:1px solid blue; background-color:white"> TRY FOR FREE ! </button></center>
+			</div>
+			<br>
+			
+			
+			<div style="border: 1px solid #cbcbcb ;height:650px; padding:2px;border-radius:10px; background-color:white;">
+					<p style="font-size:17px; height:0px; margin-left:22px;"><b> Who your viewers also viewed  </b></p>
+						<div style="display:flex;  height:40px; margin-left:22px;">
+							<div style="width:3%; ">
+									
+										<li class="black font grey" style="margin-top:18px; list-style:none; "><i class="ri-eye-fill"></i> </li>
+							</div>
+							
+							<div style=" margin-left:18px">
+								<p style="color:grey">Private to you</p>
+							
+							</div>
+						</div>
+						
+						
+					<div style="display:flex;  height:105px; margin-left:22px;">
+						<div style="width:10%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\one.png" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:90%;">
+							<p style="height:40px; margin-left:30px; "> <b>Someone in the <br> Technology, Information</b> </p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:80px; height:30px; font-size:16px"> View </button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+					
+					<div style="display:flex;  height:105px; margin-left:22px;">
+						<div style="width:10%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\two.png" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:90%;">
+							<p style="height:40px; margin-left:30px; "> <b>Someone at Dr.<br> Babashaeb ambedkar  </b> </p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:80px; height:30px; font-size:16px"> View </button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+					
+					
+					<div style="display:flex;  height:105px; margin-left:22px;">
+						<div style="width:10%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\four.png" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:90%;">
+							<p style="height:40px; margin-left:30px; "> <b>Information Technology <br>Consultant in ...</b> </p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:80px; height:30px; font-size:16px"> View </button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+					
+					
+					<div style="display:flex;  height:105px; margin-left:22px;">
+						<div style="width:10%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\three.png" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:90%;">
+							<p style="height:40px; margin-left:30px; "> <b>Student at MGMU School <br> of Engineering</b> </p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:80px; height:30px; font-size:16px"> View </button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+		
+			</div>
+			<br>
+			
+			
+			<div style="border: 1px solid #cbcbcb ;height:850px; padding:2px;border-radius:10px; background-color:white;">
+					<p style="font-size:17px; height:0px; margin-left:22px;"><b> People you may know </b></p>
+					<p style="color:grey; margin-left:22px;">From your School </p>
+							
+					<div style="display:flex;  height:105px; margin-left:22px;">
+						<div style="width:10%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\one.png" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:90%;">
+							<p style="margin-left:30px;font-size:17px; height:5px "> <b>Sharjil Siddiqui </b> </p>
+							<p style=" margin-left:30px; color:grey; "> Full Stack Developer| AI & <br> DAta Science Student | React...</p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:90px; height:30px; font-size:16px">Connect</button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+					
+					
+					<div style="display:flex;  height:105px; margin-left:22px;">
+						<div style="width:10%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\default.jpeg" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:90%;">
+							<p style="margin-left:30px;font-size:17px; height:5px "> <b>Vedashree Chatte </b> </p>
+							<p style=" margin-left:30px; color:grey; "> student at M.G.M's Jawaharlal <br> Nehru College of Engineering</p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:90px; height:30px; font-size:16px">Connect</button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+					
+					<div style="display:flex;  height:122px; margin-left:22px;">
+						<div style="width:10%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1695090458153.jpeg" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:93%;">
+							<p style="margin-left:30px;font-size:17px; height:5px "> <b>Umesh Pawar </b> </p>
+							<p style=" margin-left:30px; color:grey; "> Final year student at M.G.M's  <br> Jawaharlal Nehru College of Engineering...</p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:90px; height:30px; font-size:16px">Connect</button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+					
+					<div style="display:flex;  height:122px; margin-left:22px;">
+						<div style="width:7%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\one.png" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:93%;">
+							<p style="margin-left:30px;font-size:16px; height:5px "> <b>Chaitrali Chatuphale </b> </p>
+							<p style=" margin-left:30px; color:grey; ">Final year student at M.G.M's  <br> Jawaharlal Nehru College of Engineering</p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:90px; height:30px; font-size:16px">Connect</button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+					
+					
+					<div style="display:flex;  height:122px; margin-left:22px;">
+						<div style="width:10%;">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1755790882755.jpeg" width="46px" height="45px" style="margin-top:16px; border-radius:25px" >
+						</div>
+										
+						<div style="width:90%;">
+							<p style="margin-left:30px;font-size:17px; height:5px "> <b>Prajwal Nakade </b> </p>
+							<p style=" margin-left:30px; color:grey; ">MGMU - 26 |B.Tech IT student <br> |SQL , Python ,HTML, CSS... </p>
+							<button style="border:1px solid black ; margin-left:30px; border-radius:25px; background-color:white; width:90px; height:30px; font-size:16px">Connect</button>
+						</div>
+					
+					</div>
+					<br>
+					<hr>
+					<center> Show All  </center>
+
+			</div>
+			<br>
+			
+			<div style="border: 1px solid #cbcbcb ;height:250px;border-radius:10px; background-color:white;">
+				<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\footer.png" height="250px" width="333px" style="border-radius:10px;" >
+				
+			</div>
+		
+		</div>
+	
+	</section> 
+	<footer class="main-div" style="margin-left:70px; display:flex">
+		
+			<div class="div-one" style=" width:20%; ">
+				<p style="height:10px;">  About </p>
+				<p style="height:10px;">  Professional Community Policies</p>
+				<p style="height:10px;">  Privacy & Terms </p>
+				<p style="height:10px;">  Sales solutions</p>
+				<p style="height:60px;">  Safety Center</p>
+				<p style="color:grey">LinkedIn Corporation 2025 </p>
+			</div>	
+
+
+			<div class="div-one" style=" width:17%;">
+				<p style="height:10px;">  Accesssibility </p>
+				<p style="height:10px;">  Careers </p>
+				<p style="height:10px;">  Ad Choices </p>
+				<p style="height:10px;">  Mobiles</p>
+			
+			</div>
+
+
+			<div class="div-three" style=" width:17%; ">
+				<p style="height:10px;"> Talent solutions</p>
+				<p style="height:10px;">  Marketing solutions </p>
+				<p style="height:10px;">  Advertising </p>
+				<p style="height:10px;">  Small business </p>
+			</div>
+			
+			
+			<div class="div-four" style=" width:23%">
+					<div style="display:flex; margin-left:22px; height:56px">
+						<div style="width:7%; margin-right:16px; ">
+								
+										<li class="black font grey" style="margin-top:18px; list-style:none; font-size:24px" ><i class="ri-question-fill"></i></li>
+						</div>
+										
+						<div>
+							<p style="height:5px;"><b>Questions</b></p>
+							<p style="color:grey">Visit our help center </p>
+						</div>
+					</div>
+					
+					
+					<div style="display:flex; margin-left:22px;  height:56px">
+						<div style="width:7%; margin-right:16px; ">
+								
+										<li class="black font grey" style="margin-top:18px; list-style:none; font-size:24px "><i class="ri-settings-5-fill"></i></li>
+						</div>
+										
+						<div>
+							<p style="height:5px;"><b>Manage your account and privacy </b></p>
+							<p style="color:grey">Go to your settings </p>
+						</div>
+					</div>
+					
+					<div style="display:flex; margin-left:22px;">
+						<div style="width:7%; margin-right:16px; ">
+								
+										<li class="black font grey" style="margin-top:18px; list-style:none; font-size:24px"><i class="ri-shield-fill"></i> </li>
+						</div>
+										
+						<div>
+							<p style="height:5px;"><b>Recommendations transparency </b></p>
+							<p style="color:grey">Learn more about Recommended content</p>
+						</div>
+					</div>
+					
+				
+			</div>
+			
+			<div class="div-four" style=" width:20%; margin-left:19px">
+				<p style="height:15px; color:grey"> Select languages : </p>
+				
+				<div style="border:1px solid black ; width:250px; height:33px; border-radius:5px; font-size:16px; background-color:white; padding:2px; ">  <p style="margin-top:7px"> English  (English) </p> </div>
+			
+			
+			</div>
+		</footer>
+
+	
+	
+</div>
+</body>
+</html>

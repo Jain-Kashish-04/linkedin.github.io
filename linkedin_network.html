@@ -1,0 +1,2255 @@
+<html>
+	<head>
+		<title>
+			LinkedIn Network
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			nav{
+				display:flex;
+				width:100%;
+				height:60px;
+				position:fixed;
+				z-index:5;
+				background-color:white;
+			}
+			
+			
+			.invisible-scrollbar::-webkit-scrollbar {
+			  display: none;
+			}
+			
+			.nav-one{
+				width:30%; margin-left:200px; display:flex; margin-top:5px;
+			}
+			.nav-one img {
+				padding-top:0px; margin-right:10px; width:35px; height:35px;
+			}
+			
+			.nav-one button{
+				width:300px; height:40px; border-radius:50px ; text-align:left; font-size:17px;
+			}
+			.nav-two{
+				width:70%; margin-top:7px; display:flex;
+			}
+			.nav-two a{
+				color:black; text-decoration:none;
+			}
+			.nav-two .black_font_grey_one{
+				list-style:none;
+			}
+			
+			.nav-two .black_font_grey_two, .black_font_grey_four{
+				margin-left:29px; list-style:none; 
+			}
+			.nav-two .black_font_grey_three{
+				margin-left:28px; list-style:none;
+			}
+			
+			.nav-two .black_font_grey_five,.black_font_grey_six{
+				margin-left:22px; list-style:none;
+			}
+			.ri-home-4-fill{
+				font-size:23px; margin-left:6px;
+			}
+			.black_font_grey_two  .ri-group-3-fill{
+				margin-left:30px;
+			}
+			
+			
+			.ri-chat-1-fill{
+				font-size:23px; margin-left:19px;
+			}
+			.ri-briefcase-4-fill{
+				font-size:23px;
+			}
+			.ri-notification-3-fill {
+				font-size:23px; margin-left:22px;
+			}
+			.black_font_grey_six  img{
+				border-radius:25px; width:23px; height:22px; 
+			}
+			.black_font_grey_seven, .black_font_grey_eight{
+				margin-left:22px; list-style:none;
+			}
+			.ri-grid-fill{
+				font-size:23px; margin-left:25px;
+			}
+			.black_font_grey_eight  i{
+				color:goldenrod; font-size:23px; margin-left:45px;
+			}
+			.nav_hr  hr{
+				height:40px;margin-left:10px; margin-top:0px;
+			}
+			.main_section{
+				background-color:#f9f4f1;
+			}
+			.main_screen{
+				display:flex; width:100%;
+			}
+			.side_bar{
+				width:35%; margin-left:80px; margin-top:72px;
+			}
+			.invisible-scrollbar{
+				width:360px; height:600px; border-radius:10px; padding:10px; overflow:auto; margin-left:10px; position:fixed;
+			 }
+			.side_bar_first_block{
+				border: 1px solid #cbcbcb  ; color:grey; height:380px; border-radius:10px; background-color:white; 
+			 }
+			.connection{
+				display:flex; font-size:19px; margin-top:20px; margin-left:20px;
+			}
+			.connection_logo{
+				 width:15%; 
+			}
+			.side_bar_img{
+				list-style:none; margin-right:2px;
+			}
+			.ri-group-3-fill{
+				font-size:23px; margin-left:10px;
+			}
+			.connection_423{
+				width:85%;
+			}
+			.connection_span{
+				margin-left:140px; font-size:16px;
+			}
+			.ri-user-3-fill{
+				font-size:23px; margin-left:9px;
+			}
+			.side_bar_2{
+				width:60%;
+			}
+			.ri-team-fill{
+				font-size:23px; margin-left:9px;
+			}
+			.ri-calendar-2-line{
+				font-size:23px; margin-left:9px;
+			}
+			.ri-building-4-line{
+				font-size:23px; margin-left:9px;
+			}
+			.connection_span_1{
+				margin-left:180px; font-size:13px;
+			}
+			.page_span{
+				margin-left:200px; font-size:16px;
+			}
+			.ri-news-line{
+				font-size:23px; margin-left:9px;
+			}
+			.newsletters_span{
+				margin-left:145px; font-size:16px;
+			}
+			.side_bar_second_block{
+				border: 1px solid #cbcbcb ;height:230px; padding:2px;border-radius:10px; background-color:white;
+			}
+			.side_bar_p{
+				font-size:13px;
+			}
+			.side_bar_img_1{
+				display:flex;
+			}
+			.side_bar_3{
+				width:40%;
+			}
+			.side_bar_image{
+				width:90px; height:90px; border-radius:100%; margin-left:59px;
+			}
+			.sidebar_premium{
+				width:60%; margin-left:50px;
+			}
+			.sidebar_span{
+				font-size:20px; margin-top:30px;
+			}
+			.side_bar_second_block  button{
+				border-radius:20px; width:200px; height:40px; color:blue; border:1px solid blue;
+			}
+			.class_1{
+				width:74%;  margin-top:10px; margin-top:83px;margin-left:450px;
+			}
+			.grow_1{
+				border: 1px solid #cbcbcb ;height:60px; padding:2px; border-radius:10px; background-color:white; width:900px;
+			}
+			.grow_2{
+				margin-top:20px;
+			}
+			.grow_title{
+				margin-left:60px; font-size:21px; color:green; 
+			}
+			.catch_title{
+				font-size:21px; margin-left:30px;
+			}
+			.block_2{
+				border: 1px solid #cbcbcb ; height:150px; padding:2px; border-radius:10px; background-color:white; width:900px;
+			}
+			.puzzle_game{
+				padding:2px; font-size:17px; margin-left:7px;
+			}
+			.brainly_1{
+				display:flex; height:100px;  margin-left:7px;
+			}
+			.brainly_2{
+				display:flex; 
+			}
+			.brainly_3{
+				width:3%;
+			}
+			.brain_img{
+				height:75px ; width:75px ; border-radius:50%;margin-top:2px;
+			}
+			.Brainly_text{
+				 margin-left:70px; font-size:18px;margin-top:-16px;
+			}
+			.brainly_title{
+				height:2px;
+			}
+			.brainly_title_2{
+				color:grey;
+			}
+			.brainly_title_3{
+				margin-left:490px;
+			}
+			.brainly_button{
+				border:1px solid blue; width:100px; height:35px; border-radius:25px; color:blue; margin-left:15px;
+			}
+			.block_4{
+				border: 1px solid #cbcbcb ; height:235px; padding:2px; border-radius:10px; background-color:white; width:900px;
+			}
+			.premium_1{
+				padding:2px; font-size:17px; height:5px; margin-left:10px;
+			}
+			.premium_2{
+				padding:2px; font-size:17px; margin-left:10px;
+			}
+			.block4_new{
+				display:flex; height:100px;
+			}
+			.block4_neww{
+				display:flex; width:47%; border-radius:10px; border: 1px solid #cbcbcb ; height:120px; margin-left:10px; padding:5px;
+			}
+			.block4{
+				width:3%;
+			}
+			.image_member{
+				height:75px; width:75px; border-radius:50%;margin-top:2px;
+			}
+			.member_text{
+				margin-left:70px; font-size:18px;margin-top:1px;
+			}
+			.member_p{
+				height:0px;
+			}
+			.talent_p{
+				color:grey;
+			}
+			.member_2{
+				 margin-left:70px; font-size:18px;margin-top:1px;
+			}
+			.member_button{
+				border:1px solid blue; width:300px; height:35px; border-radius:25px; color:blue; background-color:white;
+			}
+			.profile_1{
+				display:flex;  width:45%; border-radius:10px; border: 1px solid #cbcbcb ; height:125px; margin-left:28px ; padding:3px;
+			}
+			.profile_2{
+				width:3%; 
+			}
+			.image_member_2{
+				height:75px; width:75px; border-radius:50%;margin-top:2px;
+			}
+			.profile_button{
+				border:1px solid blue; width:300px; height:35px; border-radius:25px; color:blue; background-color:white;
+			}
+			.main_div{
+				border: 1px solid #cbcbcb ; height:620px; padding:5px; border-radius:10px; background-color:white; width:900px;
+			}
+			.main_div1{
+				display:flex; margin-top:10px;	
+			}
+			.main_div2{
+				width:23%; border-radius:10px; border:1px solid #cbcbcb ; height:290px; margin-left:18px;
+			}
+			.main_div3{
+				width:100%; position:relative; height:80px; border-radius:7px;background: linear-gradient(90deg, rgba(69, 106, 130, 1) 0%, rgba(84, 113, 140, 1) 50%, rgba(214, 241, 255, 1) 100%);
+			}
+			.main_div4{
+				position:absolute; top:35px; left:55px;
+			}
+			.bg_img{
+				width:90px; height:95px; border-radius:50%; border:1px solid black;
+			}
+			.student1{
+				height:0px; font-size:16px;
+			}
+			.student_info{
+				color:grey;height:15px;
+			}
+			.student_info1{
+				color:grey;height:45px; 
+			}
+			.student_info2{
+				color:grey;height:40px; 
+			}
+			.mutual_1{
+				display:flex;  height:62px; margin-left:18px;
+			}
+			.mutual_2{
+				width:7%;
+			}
+			.mutual_img{
+				width:35px ; height:35px ; margin-top:16px; border-radius:50%;
+			}
+			.mutual_3{
+				width:90%; margin-left:17px; margin-top:5px;
+			}
+			.mutual_5{
+				width:90%;margin-top:5px;
+			}
+			.mutual_other{
+				width:90%; margin-top:5px; margin-left:9px;
+			}
+			.other_connection{
+				height:5px; font-size:13px; color:grey;
+			}
+			.connect_button{
+				border:2px solid blue; width:173px; height:35px; border-radius:25px; color:blue; background-color:white;
+			}
+			.sub_div{
+				width:23%; border-radius:10px; border:1px solid #cbcbcb ; height:290px; margin-left:10px;
+			}
+			.sub_div18{
+				width:23%; border-radius:10px; border:1px solid #cbcbcb ; height:290px; margin-left:18px;
+			}
+			.student_19{
+				height:0px; font-size:19px;
+			}
+			.profile_section{
+				width:100%; position:relative; height:80px; border-radius:7px;background: linear-gradient(90deg, rgba(69, 106, 130, 1) 0%, rgba(84, 113, 140, 1) 50%, rgba(214, 241, 255, 1) 100%);
+			}
+			.side_bar_first_block_header{
+				margin-left:20px;
+			}
+			.invitations_block{
+				border: 1px solid #cbcbcb ; height:300px; padding:2px; border-radius:10px; background-color:white; width:900px;
+			}
+			.invitations_text{
+				padding:2px; font-size:19px;
+			}
+			.invitations_text1{
+				margin-left:700px;
+			}
+			.invite{
+				display:flex; height:100px; padding:5px;
+			}
+			.invite_1{
+				display:flex;
+			}
+			.invite_3{
+				width:3%;
+			}
+			.invite_img{
+				height:85px ; width:85px ; border-radius:50%;margin-top:2px;
+			}
+			.invite_name{
+				margin-left:70px; font-size:20px;margin-top:-16px;
+			}
+			.invite_name1{
+				 margin-left:70px; font-size:20px;margin-top:-22px;
+			}
+			.invite_text{
+				height:5px;
+			}
+			.invite_text1{
+				height:1px;
+			}
+			.invite_color{
+				color:grey;
+				margin-top:16px;
+			}
+			.invite_color1{
+				color:grey; font-size:19px; height:2px ;
+			}
+			.invite_span{
+				margin-left:550px;
+			}
+			.invite_span1{
+				margin-left:573px; 
+			}
+			.ignore_text{
+				font-size:20px; color:black; 
+			}
+			.ignore_text_hani{
+				font-size:20px; color:black;
+			}
+			
+			.ignore_text1{
+				font-size:20px; color:black;
+			}
+			.accept_button{
+				border:1px solid blue; width:100px; height:35px; border-radius:25px; color:blue; margin-left:15px;
+			}
+			.accept_button_hani{
+				border:1px solid blue; width:100px; height:35px; border-radius:25px; color:blue; margin-left:15px; margin-top:-170px;
+			}
+			.invitations_text_responsive{
+				display:none;
+			}
+			.invitations_text1_responsive{
+				display:none;
+			}
+			.ignore_text_responsive ,.accept_button_responsive ,.ignore_text1_responsive{
+				display:none;
+			}
+			.invite_span_responsive{
+				display:none;
+			}
+			.nav_mobile{
+				display:none;
+			}
+			.accept_button_responsive ,.ignore_text_responsive ,.invite_span_responsive{
+				display:none;
+			}
+			.accept_button1_responsive ,.ignore_text1_responsive ,.invite_span_responsive{
+				display:none;
+			}
+			.mine, .mine_1{
+				display:none;
+			}
+			.footer{
+				display:none;
+			}
+			.main_div_responsive{
+				display:none;
+			}
+			.main_div2_responsive{
+				display:none;
+			}
+		
+		@media screen and (max-width:750px) {
+			nav{
+				display:none;
+			}
+			.side_bar{
+				display:none;
+			}
+			.nav_mobile{
+				display:block;
+				background-color:white;
+				position:fixed;
+				top:0%;
+				width:1150px;
+				height:80px;
+			}
+			.nav_mobile_icon{
+				padding:7px;
+				display:flex;
+			}
+			.class_1{
+				 margin-top:10px; margin-top:99px;
+			}
+			
+			.grow_1{
+				border:2px solid #cbcbcb ;height:50px; padding:2px; border-radius:10px; background-color:white; width:1100px; margin-left:-440px;
+			}
+			.grow_2{
+				margin-top:10px;
+			}
+			.grow_title{
+				margin-left:60px; font-size:28px; color:green; 
+			}
+			.catch_title{
+				font-size:28px; margin-left:750px;
+			}
+			.invitations_text{
+				display:none;
+			}
+			.invitations_text1{
+				display:none;
+			}
+			.invitations_text_responsive{
+				display:block;
+				font-size:29px; 
+				margin-left:50px;
+				height:19px;
+				
+			}
+			.invitations_text1_responsive{
+				display:block;
+				font-size:29px; 
+				margin-left:890px;
+				height:10px;
+				margin-top:-33px;
+			}
+			.invitations_block{
+				border:2px solid #cbcbcb ; height:360px; padding:2px; border-radius:10px; background-color:white; width:1100px; margin-left:-440px;
+			}
+			.invite{
+				display:flex; height:115px; padding:5px;
+			}
+			.invite_name{
+				margin-left:59px; font-size:26px;margin-top:-16px; 
+			}
+			.invite_name1{
+				 margin-left:59px; font-size:25.5px;margin-top:-22px;
+			}
+			.invite_text ,.invite_text1{
+				font-size:26px; margin-left:20px;
+			}
+			
+			.invite_color ,.invite_color1{
+				color:grey;  font-size:25px; margin-left:22px; font-text:bold;
+			}
+			.accept_button_hani ,.ignore_text_hani{
+				display:none;
+			}
+			
+			.invite_img{
+				height:90px ; width:90px ; border-radius:50%; margin-top:10px; margin-left:10px;
+			}
+			
+			.accept_button ,.ignore_text ,.ignore_text1{
+				display:none;
+			}
+			.accept_button_responsive {
+				display:block;
+				border:3px solid blue;  border-radius:50%;  width:40px; height:40px;  font-size:22px;  margin-top:-26px; color:blue;margin-left:53px;
+			}
+			.accept_button1_responsive{
+				display:block;
+				border:3px solid blue;  border-radius:50%;  width:40px; height:40px;  font-size:22px;  margin-top:-42px; color:blue;margin-left:53px;
+			}
+			
+			.ignore_text_responsive{
+				display:block;
+				border:3px solid black; border-radius:50%; width:40px; height:40px; font-size:22px;
+			
+				margin-top:-26px;
+				margin-left:430px;
+			}
+			
+			.ignore_text1_responsive{
+				display:block;
+				border:3px solid black; border-radius:50%; width:40px; height:40px; font-size:22px;
+				margin-top:-42px;
+				margin-left:430px;
+			}
+			.invite_span_responsive{
+				display:block;
+				margin-left:360px;
+				display:flex;
+			}
+			
+			.footer{
+				display:block;
+				background-color:white;
+				height:70px;
+				width:1160px;
+				margin-left:-450px;
+				position:fixed;
+				bottom:0;
+				
+			}
+			.inner_footer{
+				width:100%;display:flex;
+			}
+			.footer a{
+				color:black; text-decoration:none;
+			}
+			.footer .black_font_grey_one{
+				list-style:none;
+				margin-left:80px;
+				color:grey;
+				font-size:29px;
+				
+			}
+			
+			.footer .black_font_grey_two{
+				margin-left:110px; list-style:none; color:grey;font-size:29px;
+			}
+			.footer .black_font_grey_three{
+				margin-left:110px; list-style:none;color:grey;font-size:29px;
+			}
+			
+			.footer .black_font_grey_five{
+				margin-left:110px; list-style:none;color:grey;font-size:29px;
+			}
+			.footer  .black_font_grey_four{
+				margin-left:110px; list-style:none;color:grey;font-size:29px;
+			}
+			.ri-home-4-fill{
+				font-size:29px; margin-left:22px;
+			}
+			.ri-group-3-fill{
+				font-size:29px; margin-left:45px;
+			}
+
+			.ri-briefcase-4-fill{
+				font-size:29px;
+			}
+			.ri-notification-3-fill {
+				font-size:29px; margin-left:48px;
+			}
+			.ri-add-box-fill{
+				font-size:29px; margin-left:21px;
+			}
+			
+			
+			
+			.block_2{
+				border: 1px solid #cbcbcb ; height:215px; padding:2px; border-radius:10px; background-color:white; width:1100px; margin-left:-440px;
+			}
+			.brainly_button{
+				border:3px solid blue; height:35px; border-radius:25px; color:blue; margin-left:-100px; margin-top:-40px; font-size:24px; width:150px;
+			}
+			.brainly_1{
+				display:flex;
+			}
+			.brainly_title_3{
+				margin-left:890px;
+			}
+			
+			.brain_img{
+				height:90px ; width:90px ; border-radius:50%;
+			}
+			.Brainly_text{
+				 margin-left:80px; font-size:26.2px; margin-top:-16px;
+			}
+			.brainly_title{
+				height:4px;
+			}
+			.brainly_title_2{
+				color:grey; 
+			}
+			.puzzle_game{
+				padding:2px; font-size:27px; margin-left:7px;
+			}
+			
+			.mine{
+				
+				display:block;
+				font-size:32px; 
+				margin-left:-420px;
+				height:-51px;
+				margin-top:18px;
+			}
+			.mine_1{
+				font-weight:bold;
+				display:block;
+				font-size:45px;
+				margin-left:970px;
+				height:10px;
+				margin-top:-50px;
+			}
+			.block_4{
+				display:none;
+			}
+			.main_div{
+				display:none;
+			}
+			.main_div_responsive{
+				display:block; border:2px solid #cbcbcb ; border-radius:10px;  width:1120px; margin-left:-442px; height:1430px; background-color:white; 
+			}
+			
+			
+			
+			.main_div2{
+				width:39%; border-radius:10px; border:2px solid #cbcbcb ; height:430px; margin-left:68px;
+			}
+			.main_div3{
+				width:100%; position:relative; height:130px; border-radius:7px; background: linear-gradient(90deg, rgba(69, 106, 130, 1) 0%, rgba(84, 113, 140, 1) 50%, rgba(214, 241, 255, 1) 100%);
+			}
+			.main_div4{
+				position:absolute; top:35px; left:130px;
+			}
+			.bg_img{
+				width:140px; height:136px; border-radius:50%; border:1px solid black;
+			}
+			.student1{
+				height:9px; font-size:27px;
+			}
+			.student_info{
+				color:grey;height:45px; font-size:26px;
+			}
+			.student_info1{
+				color:grey;height:35px; 
+			}
+			.student_info2{
+				color:grey;height:40px; 
+			}
+			.mutual_1{
+				display:flex;  height:72px; margin-left:18px;
+			}
+			.mutual_2{
+				width:7%;
+			}
+			.mutual_img{
+				width:35px ; height:35px ; margin-top:16px; border-radius:50%; margin-left:39px; border:2px solid black;
+			}
+			.mutual_3{
+				width:90%; margin-left:17px; margin-top:-12px;
+			}
+			.mutual_5{
+				width:90%;margin-top:-12px;
+			}
+			.mutual_other{
+				width:90%; margin-top:5px; margin-left:9px;
+			}
+			.other_connection{
+				height:10px; font-size:26px; color:grey; margin-right:30px;
+			}
+			.connect_button{
+				border:2px solid blue; width:193px; height:45px; border-radius:25px; color:blue; background-color:white; font-size:22px;
+			}
+			
+			
+			
+			
+			
+		}
+
+		</style>
+		<link rel="styelsheet"  href="" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	
+<body style="margin:0%; padding:0%; background-color:#f9f4f1;">
+
+
+	<nav>
+		<div class="nav-one">
+			<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\174857.png">
+			<button> Search </button>
+		</div>
+		
+		<div class="nav-two">
+		
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_home.html" ><li class="black_font_grey_one"><i class="ri-home-4-fill"></i><br><span>Home</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_network.html"><li class="black_font_grey_two"><i class="ri-group-3-fill"></i><br> <span>My Network</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_job.html" ><li class="black_font_grey_three"><i class="ri-briefcase-4-fill" ></i><br><span>Jobs</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_message.html"><li class="black_font_grey_four"><i class="ri-chat-1-fill"></i><br><span>Messaging</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_notification.html" ><li class="black_font_grey_five"><i class="ri-notification-3-fill"></i><br><span>Notifications</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin.html"><li class="black_font_grey_six"><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" class="profile-pic"><br><span> Me </span><i class="ri-arrow-down-s-fill"></i></li></a>
+			
+			<div class="nav_hr">
+				<hr>
+			</div>
+			
+			<li class="black_font_grey_seven"><i class="ri-grid-fill"></i><br><span>For Business</span> <i class="ri-arrow-down-s-fill"></i></li>
+			<li class="black_font_grey_eight"><i class="ri-checkbox-multiple-blank-fill"></i><br><span>Try Premium for ₹0</span></li>
+			
+		</div>
+		<hr>
+	</nav>
+
+
+	<nav class="nav_mobile">
+		<div class="nav_mobile_icon">
+			<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" style="width:70px; height:70px; border-radius:50%;">
+			<button style="width:700px; height:59px; border:1px solid grey; border-radius:25px; margin-left:30px ; margin-top:3px ; text-align:left; font-size:29px; padding:2px; "> Search </button>
+			<a style="color:black; text-decoration:none;" href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_message.html"><li style="list-style:none; margin-top:8px"> <i class="ri-message-3-fill" style="font-size:52px; margin-left:130px; color:grey; "></i> </li>
+		</div>
+	</nav>
+
+
+<section class="main_section">
+<div class="main_screen">
+
+	<div class="side_bar">
+		<div class="invisible-scrollbar"style="">
+			
+
+			<div class="side_bar_first_block">
+				<h3 class="side_bar_first_block_header" style=""> Manage my Network </h3>
+				<hr>
+				
+				<div class="connection">	
+					<div class="connection_logo">
+						<li class="side_bar_img" style=""><i class="ri-group-3-fill" style="" ></i></li> 
+					</div>
+					
+					<div class="connection_423" style="">
+						<b>Connections   <span class ="connection_span" style=""> 423  </span></b>
+					</div>
+				</div>
+				
+				
+				<div class="connection">	
+					<div class="connection_logo">
+						
+						<li class="side_bar_img" style=""><i class="ri-user-3-fill" style=""></i></li> 
+					</div>
+					
+					<div class= "side_bar_2" style="">
+						<b>Following & followers</b>
+					</div>
+				</div>
+				
+				
+				
+				<div class="connection">	
+					<div class="connection_logo">
+						
+						<li class="side_bar_img" style=" "><i class="ri-team-fill" style=""></i></li> 
+					</div>
+					
+					<div class="connection_423">
+						<b>Groups   <span class ="connection_span_1" style=""> 1 </span> </b>
+					</div>
+				</div>
+				
+				<div class="connection">	
+					<div class="connection_logo">
+						
+						<li class="side_bar_img" style=""><i class="ri-calendar-2-line" style="" ></i></li> 
+					</div>
+					
+					<div class= "side_bar_2">
+						<b>Events</b>
+					</div>
+				</div>
+				
+				
+				
+				<div class="connection">	
+					<div class="connection_logo">
+						
+						<li class="side_bar_img" style=" "><i class="ri-building-4-line" style=""></i></li> 
+					</div>
+					
+					<div class="connection_423">
+						<b>page   <span class="page_span" style=""> 8</span></b>
+					</div>
+				</div>
+			
+				
+				<div class="connection">	
+					<div class="connection_logo">
+						
+						<li class="side_bar_img" style=""><i class="ri-news-line" style=""></i></li> 
+					</div>
+					
+					<div class="connection_423">
+						<b>Newsletters   <span class ="newsletters_span" style=""> 1 </span> </b>
+					</div>
+				</div>
+				
+
+			</div>
+			
+			<br>	
+			
+			<div class ="side_bar_second_block" style="">
+				<center><p class="side_bar_p" style=""> Premium has a helped 3.2 million  memebers land a job <br>  in the past years 	</p></center>
+				
+				<div class ="side_bar_img_1" style="">
+					<div class ="side_bar_3" style="">
+						<img class="side_bar_image" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\profile.jpeg">
+					</div>
+				
+					<div class="sidebar_premium" style="">
+						<p class="sidebar_span" style=""> Premium </p>
+					</div>
+				
+				</div>
+				<br>
+				<center><button > TRY FOR FREE </button></center>
+			</div>
+			
+		</div>		
+	</div>
+		
+	
+		
+		
+		<div class="class_1" style=" ">
+		
+			<div class="grow_1" style="">
+				<div class="grow_2" style="">
+					<a class="grow_title" style=" "><b> Grow </b></a>
+					<a class="catch_title" style=" "> <b> Catch up </b></a>
+				</div>	
+			</div>
+			<br>
+			
+			
+			<div class="invitations_block" style="">
+				<p class="invitations_text"style=""> Invitations (2) <span class="invitations_text1"style="">  Show All </span> </p>
+				<p class="invitations_text_responsive"style=""> Invitations (2) <span class="invitations_text1_responsive"style=""> → </span> </p>
+				
+				<hr>
+				
+					<div class="invite" style="">
+						<div class="invite_1" >
+							<div class="invite_3" >
+								<img class="invite_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1731944327407.jpeg">
+							</div>
+									
+							<div class="invite_name" style="  ">
+								<p class="invite_text" style=""><b>Dr. Umesh Ubale </b></p>
+								<p class="invite_color" style=" "> --- <span class="invite_span" style="">  <b class="ignore_text" style=""> Ignore</b> <button  class="accept_button" style=""> Accpet </button>  </span>  <span class="invite_span_responsive"><button class="ignore_text_responsive" style=""> × </button> <button  class="accept_button_responsive" style=""> ✓</button></span>   Aman Shaikh and 2 other mutual connections </p>
+							</div>
+						</div>
+					</div>
+					
+					<hr>
+					
+					<div class="invite">
+						<div class="invite_1">
+							<div class="invite_3">
+								<img class="invite_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1747329013677.jpeg" >
+							</div>
+									
+							<div class="invite_name1" style="">
+								<p class="invite_text1" style=" "><b>Hani Jawad </b></p>
+								<p class="invite_color1"style=""> Attendance M.G.M's Jawaharlal Nehru <br>Colleges of Enginneering   <span class="invite_span1" style="">  <b class="ignore_text_hani" style=""> Ignore</b> <button  class="accept_button_hani" style=""> Accpet </button>  </span>  <span class="invite_span_responsive">  <button class="ignore_text1_responsive" style=""> × </button> <button class="accept_button1_responsive"> ✓ </button>  </span> </p>
+							</div>
+						</div>
+					</div>
+			</div>
+			<br>
+			
+			
+			
+			
+			<div class="block_2">
+				<p class="puzzle_game">Take a break with a LinkedIn puzzle game</p>
+				
+					<div class="brainly_1">
+						<div class="brainly_2" >
+							<div class="brainly_3">
+								<img class="brain_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\brain.gif" >
+							</div>
+									
+							<div class="Brainly_text">
+								<p class="brainly_title" ><b>Hi, I'm Brainly !</b></p>
+								<p class="brainly_title_2" >Solve in 60s or less! <span class="brainly_title_3" style=""> <button class="brainly_button" style=""> Solve now </button>  </span>  <br>17 connections recharged </p>
+							</div>
+						</div>
+					</div>
+			</div>
+			<br>
+			
+			<p class="mine"style="">Manage my networks <span class="mine_1"style=""> → </span> </p>
+			
+						
+			<div class="block_4" style="">
+				<p class="premium_1" style="">Premium</p>
+				<p class="premium_2" style="">People who are hiring for your role </p>
+				
+					<div class= "block4_new" style="">
+					
+						<div class="block4_neww" style="">
+							<div class="block4" style=" ">
+								<img class="image_member" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\AAYQBAT4AAgAAQAAAAAAAEx0AQHHitkkQaOnR2oLqY29iQ.png">
+							</div>
+									
+							<div class="member_text" style=" ">
+								<p class="member_p" style=""><b>LinkedIn memeber </b></p>
+								<p class="talent_p" style=" ">Talent Acquisition Professional</p>
+								<button class="member_button" style=""> View profile </button>
+							</div>
+						</div>
+						
+						
+						<div class="profile_1" style="">
+							<div class="profile_2" style="">
+								<img class="image_member_2" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\AAYQBAT4AAgAAQAAAAAAAD-kc1erJQf9RZSHcce7cfCT-A.png">
+							</div>
+							
+							<div class="member_2" style="">
+								<p class="member_p"><b>LinkedIn memeber </b></p>
+								<p class="talent_p">Talent Acquisition Partner | HDFC</p>
+								<button class="profile_button" style=""> View profile </button>
+							</div>
+						</div>
+						
+					</div>
+			</div>
+			<br>
+		
+		
+		
+			<div class="main_div" style="">
+				
+					<div class="main_div1" style=" ">
+					
+						<div class="main_div2" style="">
+							
+							<div class="main_div3" style=" ">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4" style=" ">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1765010084034.jpeg ">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1" style=""><b>SAKSHI PATIL</b></p>
+									<p class="student_info" style=" ">Student at MGM <br> University | IT undergra...</p>
+									
+									<div class="mutual_1" style="">
+										<div class="mutual_2" style="">
+											<img class="mutual_img" src="" >
+										</div>
+														
+										<div class="mutual_3" style="">
+											<p class="other_connection" style=" ">Vaishnavi and 64 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button" style=""> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+
+						
+						
+						<div class="sub_div" style="">
+							
+							<div class="profile_section" style=" ">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1742059376691.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>GAYATRI PIWAL</b></p>
+									<p class="student_info">Software developer |<br> MERN stack| Problem...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1732633223813.jpeg" >
+										</div>
+														
+										<div class="mutual_5" style="">
+											<p class="other_connection">snehal and 14 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+					
+						
+						<div class="sub_div">	
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1740239692184.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>GOKUL SHINDE </b></p>
+									<p class="student_info">MCA Student At Govt. <br> Engi. College || Pytho...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1760203001319.jpeg" >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection"> Aansh and 35 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+						
+						
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1760352480257.jpeg ">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>AYUSH KHOBRAGADE</b></p>
+									<p class="student_info">Core JAVA | JDBC |JSP|<br> Servlet|HTML|CSS...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1746278370116.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">Hrishikesh and 11 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+					</div>
+					
+					
+					
+					
+				<div class="main_div1">
+					
+						<div class="sub_div18" style="">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mukul.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>MUKUL KHANDALKAR</b></p>
+									<p class="student_info">Cyber Security Analyst |<br>Ethical Hacker|CTF...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\vivek.jpeg"  >
+										</div>
+														
+										<div class="mutual_3">
+											<p class="other_connection">VIVEK RAJENFRA and <br>  56 other mutual...</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\sakshi.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>SAKSHI CHANDWADE</b></p>
+									<p class="student_info">Digital  Markter|<br>Graphics Design...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img src="" class="mutual_img" >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">sanket and 5 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+					
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mukul.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>SAURABH SHINDE</b></p>
+									<p class="student_info">MERN stack developer|<br>React|Node|Express|..</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\shubham.jpeg"  >
+										</div>
+														
+										<div class="mutual_other" style="">
+											<p class="other_connection"	>SHUBHAM and 20 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+						
+						
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\krishnajpeg.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>KRISHNA KHATAL </b></p>
+									<p class="student_info">BE(AIML)|Intern at|<br> Saiket Systems |Ex-Inte...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\saniya.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">Saniya and 86 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+				</div>
+			</div>
+		<div class="main_div_responsive">
+					
+					
+					<div class="main_div1" style=" ">
+						<div class="main_div2" style="">
+							<div class="main_div3" style=" ">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4" style=" ">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1765010084034.jpeg ">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1" style=""><b>SAKSHI PATIL</b></p>
+									<p class="student_info" style=" ">Student at MGM <br> University | IT undergra...</p>
+									
+									<div class="mutual_1" style="">
+										<div class="mutual_2" style="">
+											<img class="mutual_img" src="" >
+										</div>
+														
+										<div class="mutual_3" style="">
+											<p class="other_connection" style=" ">Vaishnavi and 64 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button" style=""> Connect</button>
+								 </div>
+							</center>
+						</div>
+						
+						
+						
+						
+						<div class="main_div2" style="">
+							<div class="main_div3" style=" ">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1742059376691.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>GAYATRI PIWAL</b></p>
+									<p class="student_info">Software developer |<br> MERN stack| Problem...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1732633223813.jpeg" >
+										</div>
+														
+										<div class="mutual_5" style="">
+											<p class="other_connection">snehal and 14 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+						</div>		
+					</div>
+					
+					<br>
+					
+					
+					
+					<div class="main_div1" style=" ">
+						<div class="main_div2" style="">
+							<div class="main_div3" style=" ">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4" style=" ">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1740239692184.jpeg">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1" style=""><b>GOKUL SHINDE</b></p>
+									<p class="student_info" style=" ">MCA Student At Govt. <br>Engi. College|| Pytho..</p>
+									
+									<div class="mutual_1" style="">
+										<div class="mutual_2" style="">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1760203001319.jpeg" >
+										</div>
+														
+										<div class="mutual_3" style="">
+											<p class="other_connection" style=" ">Aansh and 35 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button" style=""> Connect</button>
+								 </div>
+							</center>
+						</div>
+						
+						
+						
+						
+						<div class="main_div2" style="">
+							<div class="main_div3" style=" ">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1760352480257.jpeg">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>AYUSH KHOBRAGADE</b></p>
+									<p class="student_info">Core JAVA| JDBC|JSP<br>Servlet|HTML|CSS..</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1746278370116.jpeg" >
+										</div>
+														
+										<div class="mutual_5" style="">
+											<p class="other_connection"> Hrishikesh and 11 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+						</div>		
+					</div>
+					
+					
+					<br>
+					
+					
+					<div class="main_div1" style=" ">
+						<div class="main_div2" style="">
+							<div class="main_div3" style=" ">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4" style=" ">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mukul.jpeg">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1" style=""><b>MUKUL KHANDALKAR</b></p>
+									<p class="student_info" style=" ">Cyber Security Analyst|<br>Ethical Hacker|CTF..</p>
+									
+									<div class="mutual_1" style="">
+										<div class="mutual_2" style="">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\vivek.jpeg" >
+										</div>
+														
+										<div class="mutual_3" style="">
+											<p class="other_connection" style=" "> VIVEK RAJENFRA and<br>56 other mutual</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button" style=""> Connect</button>
+								 </div>
+							</center>
+						</div>
+						
+						
+						
+						
+						<div class="main_div2" style="">
+							<div class="main_div3" style=" ">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\sakshi.jpeg">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>SAKSHI CHANDWADE</b></p>
+									<p class="student_info">Digital Markter|<br>Graphics Design..</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1732633223813.jpeg" >
+										</div>
+														
+										<div class="mutual_5" style="">
+											<p class="other_connection">sanket and 5 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+						</div>		
+					</div>
+					
+						
+					
+		</div>
+	<br><br>					
+<br>
+				
+				
+		<div class="main_div">				
+				<div class="main_div1">
+					
+						<div class="sub_div18">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\chandra.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Chandrakant mate </b></p>
+									<p class="student_info">Web developer|HTML <br>CSS| JS | BOOTSTRAP |..</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1732633223813.jpeg"  >
+										</div>
+														
+										<div class="mutual_3">
+											<p class="other_connection">snehal and 15 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\pri.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Priyanka Rokade</b></p>
+									<p class="student_info">Attended Dr.babasaheb <br>Ambedkar Technological</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1732633223813.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">snehal and 12 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+					
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\payal.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Payal Udavant </b></p>
+									<p class="student_info">Student at chh.shahu col-  <br>ege of Enginneering.</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\vitthal.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection"> Vitthal and 6 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+						
+						
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\komal.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Komal Raut </b></p>
+									<p class="student_info">Software Engineer |<br> HTML5 , Tailwind CSS,..</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\dr.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">Dr Umesh is a mutual <br> connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+				</div>
+				
+				
+				
+				<div class="main_div1">
+					
+						<div class="sub_div18">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\ritika.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Ritika Rokade </b></p>
+									<p class="student_info">Aspiring Data Analyst |<br>Creative Web Developer .</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img"src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1732633223813.jpeg"  >
+										</div>
+														
+										<div class="mutual_3">
+											<p class="other_connection">snehal and 22 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\rohit.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Rohit Kulkarni </b></p>
+									<p class="student_info">Machine Learning <br> Enthusiast |Deep...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1746278370116.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">Hrishikesh and 16 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+					
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\pooja.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Pooja janarao</b></p>
+									<p class="student_info">B.tech CSE (AI&ML)-<br> 2K26 |Aspiring Data..</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\ath.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection"> Atharva and 35 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+						
+						
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\ayush.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student_19" style=""><b>Ayush Fande </b></p>
+									<p class="student_info">2nd prize-global <br>Google maps hackathon</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\piyush.jpeg" >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">aayush and 16 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+				</div>
+</div>				
+				
+<br>				
+				
+			<div class="main_div">
+				<div class="main_div1">
+					
+						<div class="sub_div18">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\abhi.jpeg">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Abhishek Ambhure </b></p>
+									<p class="student_info">Student at Deogiri <br> Institude of Enginneering</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\yogesh.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">Yogesh is a mutual <br>connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\bhumika.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Bhumika Munot </b></p>
+									<p class="student_info">Junior Year Student At<br>M.G.M's Jawaharlal ...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\saniya.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">saniya and 37 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+					
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1740239692184.jpeg">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Anand Jadhav </b></p>
+									<p class="student_info1" style="">Student At Dr.babasaheb  <br>Ambedkar Marathawada .</p>
+									
+									
+											<p class="talent_p"> Based on your profile</p>
+											
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+						
+						
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\yash.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student_19"><b>Yash Takasale </b></p>
+									<p class="student_info">Computer Science <br> Enginneering Student at...</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img src="" class="mutual_img" >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">Vaishnavi and 28 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+				</div>
+				
+				
+				<div class="main_div1">
+					
+						<div class="sub_div18">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\misaba.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Misba Shaikh </b></p>
+									<p class="student_info2"style="">Student at CSMSS chh.<br> Shahu College of..</p>
+									
+									<p class="talent_p"> Based on your profile</p>
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\shrushti.jpeg">
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Srushti Lomate </b></p>
+									<p class="student_info">Student at M.G.M's<br>Jawaharlal Nehru College</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\snehal.jpeg" >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">snehal and 14 other <br>  mutual connections</p>
+											
+										</div>
+									</div>
+														
+									
+									
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+					
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\default.jpeg" >
+								</div>
+							</div><br><br>
+							
+							
+							<center>
+								 <div>
+									<p class="student1"><b>Sandeep Kumar </b></p>
+									<p class="student_info1">Network Administrator at <br> Instagram </p>
+									
+									<p class="talent_p" > Based on your profile </p>
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+						
+						
+						
+						
+						<div class="sub_div">
+							
+							<div class="profile_section">
+									<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552 138" id="person-default" data-supported-dps="2048x512" >
+										  <path fill="none" d="M0 0h552v138H0z"/>
+										  <path fill="#d9e5e7" d="M0 0h552v138H0z"/>
+										  <path fill="#bfd3d6" d="M380 0h172v138H380z"/>
+										  <path d="M333.22 0H0v138h333.22a207.93 207.93 0 000-138z" fill="#a0b4b7"/>
+									</svg>-->
+								<div class="main_div4">
+									<img class="bg_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\default.jpeg" >
+								</div>
+							</div><br><br>
+							
+							<center>
+								 <div>
+									<p class="student_19"><b>Akshada sontake </b></p>
+									<p class="student_info">Final year CSE <br> Student |SQL | Python |..</p>
+									
+									<div class="mutual_1">
+										<div class="mutual_2">
+											<img class="mutual_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\piyush.jpeg"  >
+										</div>
+														
+										<div class="mutual_5">
+											<p class="other_connection">Piyush and 10 other <br>  mutual connections</p>
+										</div>
+									</div>
+										
+									<button class="connect_button"> Connect</button>
+								 </div>
+							</center>
+							
+						</div>
+						
+						
+				</div>
+		</div>
+			
+		
+			<footer class="footer">
+				<div class="inner_footer">
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_home.html" ><li class="black_font_grey_one"><i class="ri-home-4-fill"></i><br><span>Home</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_network.html"><li class="black_font_grey_two"><i class="ri-group-3-fill" ></i><br> <span>My Network</span></li></a>
+					<a href="#"><li class="black_font_grey_four"><i class="ri-add-box-fill"></i><br> <span style="margin-left:10px;" >Post</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_notification.html" ><li class="black_font_grey_five"><i class="ri-notification-3-fill"></i><br><span>Notifications</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_job.html" ><li class="black_font_grey_three"><i class="ri-briefcase-4-fill" ></i><br><span>Jobs</span></li></a>
+					
+				</div>
+			</footer>	
+
+		</div>
+</div>
+</section>	
+</body>	
+</html>

@@ -1,0 +1,1064 @@
+<html>
+	<head>
+		<title>
+			LinkedIn Home
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		
+		.invisible-scrollbar::-webkit-scrollbar {
+		  display: none;
+		  
+		}
+		.invisible-scrollbar{
+			width:20%; float:left; height:600px; border-radius:10px; padding:10px;  background-color:#f9f4f1; overflow:auto; margin-left:30px; margin-top:22px;
+		}
+		
+		nav{
+			display:flex;
+			width:100%;
+			height:60px;
+			position:fixed;
+			z-index:5;
+			background-color:white;
+			
+		}
+		
+		.nav-one{
+			width:30%; margin-left:200px; display:flex; margin-top:5px;
+		}
+		.nav-one img {
+			padding-top:0px; margin-right:10px;
+		}
+		
+		.nav-one button{
+			width:300px; height:40px; border-radius:50px ; text-align:left; font-size:17px;
+		}
+		.nav-two{
+			width:70%; margin-top:7px; display:flex;
+		}
+		.nav-two a{
+			color:black; text-decoration:none;
+		}
+		.nav-two .black_font_grey_one{
+			list-style:none;
+		}
+		
+		.nav-two .black_font_grey_two, .black_font_grey_four{
+			margin-left:20px; list-style:none; 
+		}
+		.nav-two .black_font_grey_three{
+			margin-left:28px; list-style:none;
+		}
+		
+		.nav-two .black_font_grey_five, .black_font_grey_six{
+			margin-left:22px; list-style:none;
+		}
+		.ri-home-4-fill{
+			font-size:23px; margin-left:6px;
+		}
+		.ri-group-3-fill{
+			font-size:23px; margin-left:29px;
+		}
+		.ri-chat-1-fill{
+			font-size:23px; margin-left:19px;
+		}
+		.ri-briefcase-4-fill{
+			font-size:23px;
+		}
+		.ri-notification-3-fill {
+			font-size:23px; margin-left:22px;
+		}
+		.black_font_grey_six  img{
+			border-radius:25px; width:23px; height:22px; 
+		}
+		.black_font_grey_seven, .black_font_grey_eight{
+			margin-left:22px; list-style:none;
+		}
+		.ri-grid-fill{
+			font-size:23px; margin-left:25px;
+		}
+		.black_font_grey_eight  i{
+			color:goldenrod; font-size:23px; margin-left:45px;
+		}
+		.nav_hr  hr{
+			height:40px;  margin-left:10px; margin-top:0px;
+		}
+		.main_div_home{
+			margin-top:0px;  position:relative; z-index:1;
+		}
+		.invisible-scrollbar_section_one {
+			border:1px solid #cbcbcb ;height:320px; border-radius:10px; background-color:white;
+		}
+		.invisible-scrollbar_section_one_first{
+			position:relative;background: #456a82;background: linear-gradient(90deg, rgba(69, 106, 130, 1) 0%, rgba(84, 113, 140, 1) 50%, rgba(214, 241, 255, 1) 100%); height:80px; margin:0%; padding:0%; border-radius:8px; 
+		}
+		.invisible-scrollbar_section_one_first_div{
+			position:absolute ; top:35px; left:30px;
+		}
+		
+		
+		.invisible-scrollbar_section_one_first_div  img{
+			border-radius:50%; border:3px solid white; width:77px ;height:80px;
+		}
+		.paragraph_one {
+			margin-top:34px; font-size:22px ; margin-left:20px;
+		}
+		.paragraph_two{
+			font-size:14.5px;margin-left:20px;
+		}
+		.invisible-scrollbar_section_one_second{
+			display:flex;
+		}
+		.invisible-scrollbar_section_one_second_div {
+			width:20%; height:60px; margin-left:20px;
+		}
+		
+		.invisible-scrollbar_section_one_second_div  img{
+			border-radius:100%;  height:39px; width:35px;
+		}
+		.invisible-scrollbar_section_one_second_div_1  {
+			width:80%;height:60px;
+		}
+		
+		.invisible-scrollbar_section_two {
+			border:1px solid #cbcbcb ; height:100px; border-radius:10px;background-color:white;
+		}
+		
+		.invisible-scrollbar_section_two_first {
+			display:flex; font-size:20px; margin-top:20px;
+		}
+		
+		.invisible-scrollbar_section_two_first_inner_1{
+			 width:80%; margin-left:20px;
+		}
+		.invisible-scrollbar_section_two_first_inner_2 {
+			width:20%;
+		}
+		
+		.invisible-scrollbar_section_two_second{
+			display:flex; font-size:20px;
+		}
+		.invisible-scrollbar_section_two_first_inner_2  b{
+			color:blue;
+		}
+		
+		.invisible-scrollbar_section_three {
+			border: 1px solid #cbcbcb ; height:70px;border-radius:10px;background-color:white;
+		}
+		.invisible-scrollbar_section_three_div {
+			font-size:16px; padding:2px; margin-left:17px;
+		}
+		
+		.invisible-scrollbar_section_three_p{
+			height:2px;
+		}
+		
+		.invisible-scrollbar_section_four {
+			border: 1px solid #cbcbcb  ; height:230px; border-radius:10px; background-color:white;
+		}
+		.invisible-scrollbar_section_four_div {
+			display:flex; font-size:20px; margin-top:20px; margin-left:20px;
+		}
+		.invisible-scrollbar_section_four_first {
+			width:15%; margin-right:20px;
+		}
+		.invisible-scrollbar_section_four_first  img {
+			width:30px;height:30px;
+		}
+		.invisible-scrollbar_section_four_second {
+			width:60%;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.invisible-scrollbar-middle-part::-webkit-scrollbar {
+			display: none;
+		}
+		.invisible-scrollbar-middle-part {
+			width:45%;padding:10px;  float:left; margin-left:39px; overflow-y:auto; border-radius:20px; height:840px; background-color:#f9f4f1; margin-top:22px;
+		}
+		.invisible-scrollbar-middle-part-section-one{
+			background-color:white ; height:120px ; width:600px; border:1px solid #cbcbcb ; margin-left:50px; border-radius:10px;
+		}
+		.invisible-scrollbar-middle-part-div {
+			 padding:5px; display:flex; margin-top:5px;
+		}
+		
+		.invisible-scrollbar-middle-part-div   img{
+			padding-top:3px; margin-left:25px; width:35px; height:35px;
+		}
+		
+		.invisible-scrollbar-middle-part-div  button{
+			width:460px; height:43px; border-radius:50px ; text-align:left; font-size:17px; margin-left:13px; border:1px solid grey;
+		}
+		.invisible-scrollbar-middle-part-div-1 {
+			display:flex;
+		}
+		
+		.invisible-scrollbar-middle-part-div-1-1 {
+			 padding:5px; display:flex;  margin-left:30px;
+		}
+		
+		.invisible-scrollbar-middle-part-div-1-1  img {
+			 margin-left:15px; width:27px; height:30px;
+		}
+		
+		.invisible-scrollbar-middle-part-div-1-1  p{
+			margin-top:7px; margin-left:5px; font-size:17px;
+		}
+		.invisible-scrollbar-middle-part-div-1-2 {
+			padding:5px; display:flex; margin-left:100px;
+		}
+		
+		.invisible-scrollbar-middle-part-div-1-2  p{
+			margin-top:7px; margin-left:5px; font-size:17px;
+		}
+		
+		.invisible-scrollbar-middle-part-div-1-2  img{
+			width:25px; height:25px;margin-left:15px; margin-top:3px; 
+		}
+		
+		.invisible-scrollbar-middle-part-hr {
+			width:590px; margin-left:55px; 
+		}
+		
+		.post_one, .post_two ,.post_three, .post_four{
+			background-color:white ; height:680px ; width:600px; border:1px solid #cbcbcb ; margin-left:50px; border-radius:10px;
+		}
+		
+		.post_one_logo, .post_two_logo, .post_three_logo ,.post_four_logo{
+			 padding:8px; display:flex; height:38px; 
+		}
+		
+		.post_one_logo img, .post_two_logo  img, .post_four_logo img {
+			width:47px; height:50px; margin-left:20px; border-radius:50%;
+		}
+		
+		.post_one_logo  p, .post_two_logo  p, post_four_logo p{
+			margin-top:2px; margin-left:10px; font-size:14px;
+		}
+		.one_info, .two_info ,.three_info, .four_info{
+			height:66px;
+		}
+		.one_info  p ,.two_info p ,.three_info p ,.four_info p{
+			padding:5px; height:1px;
+		}
+		.one_info  a,.two_info a{
+			color:grey; text-decoration:none;
+		}
+		.one_achivement, .two_achivement, .three_achivement, .four_achivement{
+			padding:5px;
+		}
+		.one_achivement .main_post ,.two_achivement .two_main_post ,.three_achivement  .main_post,.four_achivement .main_post{
+			width:588px; height:450px ;border:1px solid white;
+		}
+		.one_comment ,.two_comment ,.three_comment, .four_comment{
+			padding:5px; display:flex; height:25px;
+		}
+		.one_comment img, .two_comment img, .three_comment img{
+			width:25px;height:25px; margin-left:15px;
+		}
+		.one_comment p, .two_comment p ,.three_comment p{
+			margin-top:2px; margin-left:10px; font-size:15px; color:grey;
+		}
+		
+		.one_comment span{
+			margin-left:255px;
+		}
+		.one_achivement_hr hr  ,.two_achivement_hr hr, .three_achivement_hr  hr, .four_achivement_hr  hr{
+			width:590px;
+		}
+		.one_achivement_actions ,.two_achivement_actions ,.three_achivement_actions,.four_achivement_actions{
+			display:flex;
+		}
+		.one_achivement_actions_like, .two_achivement_actions_like ,.three_achivement_actions_like ,.four_achivement_actions_like{
+			 padding:5px; display:flex; 
+		}
+		.one_achivement_actions_like  img ,.two_achivement_actions_like img ,.three_achivement_actions_like img,.four_achivement_actions_like  img{
+			width:25px; height:25px ; margin-left:15px;
+		}
+		.one_achivement_actions_like p, .two_achivement_actions_like p, .three_achivement_actions_like p, .four_achivement_actions_like p{
+			 margin-top:5px; margin-left:5px;
+		}
+		.one_achivement_actions_ ,.two_achivement_actions_ ,.three_achivement_actions_, .four_achivement_actions_{
+			padding:5px; display:flex;margin-left:60px;
+		}
+		.one_achivement_actions_  img , .two_achivement_actions_  img  ,.three_achivement_actions_  img, .four_achivement_actions_  img{
+			width:25px; height:25px; margin-left:15px;
+		}
+		.one_achivement_actions_  p, .two_achivement_actions_  p ,.three_achivement_actions_ p, .four_achivement_actions_  p{
+			margin-top:4px; margin-left:5px;
+		}
+		.two_info_p {
+			font-size:19px;
+		}
+		.two_comment_span{
+			margin-left:425px;
+		}
+		.post_three_logo_img {
+			 width:45px ; height:46px ; margin-left:20px; 
+		}
+		.post_three_logo_p {
+			margin-top:2px; margin-left:10px; font-size:17px;
+		}
+		.three_comment_span{
+			margin-left:425px;
+		}
+		.four_comment img{
+			 width:30px ;height:28px ;margin-left:10px; 
+		}
+		.four_comment p{
+			margin-top:6px; font-size:15px; color:grey;
+		}
+		.four_comment span{
+			margin-left:178px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		.side_bar::-webkit-scrollbar {
+			display: none;
+		}
+		
+		.side_bar{
+			width:22%; float:left; border-radius:10px; padding:10px; overflow-x:hidden; margin-left:40px; height:620px; overflow-y:auto; background-color:#f9f4f1; margin-top:22px;
+		}
+		.inner_first_side_bar{
+			 border:1px solid #cbcbcb ; height:630px; border-radius:10px; background-color:white;
+		}
+		.heading_news{
+			margin-left:20px;
+		}
+		.LinkedIn_news{
+			font-size:28px; height:13px;
+		}
+		.LinkedIn_news_inner{
+			font-size:20px;color:grey; height:33px;
+		}
+		.daily_news {
+			font-size:18px; height:10px; 
+		}
+		.inner_daily_news{
+			font-size:15px; color:grey; height:22px; 
+		}
+		.puzzle_heading{
+			color:grey; font-size:20px;
+		}
+		.puzzle_game{
+			display:flex;
+		}
+		.puzzle_block{
+			width:30%; margin-right:13px;
+		}
+		.puzzle_img{
+			width:100px; height:90px;
+		}
+		.puzzle_block_info{
+			width:70%;
+		}
+		.puzzle_block_info_p1{
+			font-size:18px; height:2px;
+		}
+		.puzzle_block_info_p2{
+			font-size:15px; color:grey; 
+		}
+		.inner_second_side_bar{
+			border: 1px solid #cbcbcb ;height:230px; padding:2px;border-radius:10px; background-color:white;
+		}
+		.inner_second_side_bar_title{
+			font-size:13px;
+		}
+		.side_bar_profile{
+			display:flex;
+		}
+		.side_bar_img{
+			width:40%;
+		}
+		.side_bar_img  img{
+			width:90px; height:90px; border-radius:100%; margin-left:59px;
+		}
+		.profile_content{
+			width:60%; margin-left:50px; 
+		}
+		.profile_content p{
+			font-size:20px; margin-top:30px;
+		}
+		.inner_second_side_bar button{
+			border-radius:20px; width:200px; height:40px; color:blue; border:1px solid blue;
+		}
+		.nav_mobile{
+			display:none;
+		}
+		.footer{
+			display:none;
+		}
+		.body{
+			overflow-x:hidden;margin:0;padding:0; background-color:#f9f4f1;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* for mobile version */
+		@media screen and (max-width:750px) {
+			nav{
+				display:none;
+			}
+			.invisible-scrollbar{
+				display:none;
+				margin:0;
+				padding:0;
+			}
+			.side_bar{
+				display:none;
+			}
+			.invisible-scrollbar-middle-part{
+				margin-left:0;
+				padding-left:0;
+				width:100%;
+				
+			}
+			.invisible-scrollbar-middle-part-section-one , .invisible-scrollbar-middle-part-hr,  .post_one, .post_two ,.post_three, .post_four {
+				margin-left:4px;
+				width:100%;
+				
+			}
+			.one_achivement .main_post ,.two_achivement .two_main_post ,.three_achivement  .main_post,.four_achivement .main_post{
+				width:508px;
+			}
+			.one_achivement_hr hr  ,.two_achivement_hr hr, .three_achivement_hr  hr, .four_achivement_hr  hr{
+				width:520px;
+			}
+			.one_achivement_actions_ ,.two_achivement_actions_ ,.three_achivement_actions_, .four_achivement_actions_{
+				padding:5px; display:flex;margin-left:40px;
+			}
+			.invisible-scrollbar-middle-part-div-1-1 {
+				padding:5px; display:flex;  margin-left:1px;
+			}
+			
+			.one_comment p,.two_comment p,.three_comment p{
+				margin-top:4px; margin-left:2px; font-size:15px; color:grey;
+			}
+			
+			.one_comment span{
+				margin-left:225px;
+			}
+			
+			.two_comment_span{
+				margin-left:385px;
+			}
+			.three_comment_span{
+				margin-left:355px;
+			}
+			.four_comment span{
+				margin-left:128px;
+			}
+			.invisible-scrollbar-middle-part-section-one{
+				display:none;
+			}
+			.invisible-scrollbar-middle-part-hr{
+				display:none;
+			}
+			.nav_mobile{
+				display:block;
+			}
+			.nav_mobile_icon{
+				padding:7px;
+				display:flex;
+			}
+			.footer{
+				display:block;
+				background-color:white;
+				margin-top:10px;
+				width:950px;
+				
+				position:fixed;
+				bottom:0;
+				
+			}
+			.inner_footer{
+				width:70%; margin-top:7px; display:flex;
+			}
+			.footer a{
+				color:black; text-decoration:none;
+			}
+			.footer .black_font_grey_one{
+				list-style:none;
+				margin-left:34px;
+				color:grey;
+			}
+			
+			.footer .black_font_grey_two{
+				margin-left:50px; list-style:none; color:grey;
+			}
+			.footer .black_font_grey_three{
+				margin-left:50px; list-style:none;color:grey;
+			}
+			
+			.footer .black_font_grey_five{
+				margin-left:50px; list-style:none;color:grey;
+			}
+			.footer  .black_font_grey_four{
+				margin-left:50px; list-style:none;color:grey;
+			}
+			.ri-home-4-fill{
+				font-size:23px; margin-left:6px;
+			}
+			.ri-group-3-fill{
+				font-size:23px; margin-left:35px;
+			}
+
+			.ri-briefcase-4-fill{
+				font-size:23px;
+			}
+			.ri-notification-3-fill {
+				font-size:23px; margin-left:28px;
+			}
+			.ri-add-box-fill{
+				font-size:23px; margin-left:11px;
+			}
+
+			
+		
+		
+		
+		}
+		
+		
+		</style>
+		<link rel="styelsheet"  href="" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+<body class="body">
+
+<nav>
+	<div class="nav-one">
+		<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\174857.png" width="35px"  height="35px">
+		<button> Search </button>
+	</div>
+	
+	<div class="nav-two">
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_home.html" ><li class="black_font_grey_one"><i class="ri-home-4-fill"></i><br><span>Home</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_network.html"><li class="black_font_grey_two"><i class="ri-group-3-fill" ></i><br> <span>My Network</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_job.html" ><li class="black_font_grey_three"><i class="ri-briefcase-4-fill" ></i><br><span>Jobs</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_message.html"><li class="black_font_grey_four"><i class="ri-chat-1-fill"></i><br><span>Messaging</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_notification.html" ><li class="black_font_grey_five"><i class="ri-notification-3-fill"></i><br><span>Notifications</span></li></a>
+		<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin.html"><li class="black_font_grey_six"><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" class="profile-pic"><br><span> Me </span><i class="ri-arrow-down-s-fill"></i></li></a>
+		
+		
+		<div class="nav_hr">
+			<hr>
+		</div>
+		
+		<li class="black_font_grey_seven"><i class="ri-grid-fill"></i><br><span>For Business</span> <i class="ri-arrow-down-s-fill"></i></li>
+		<li class="black_font_grey_eight"><i class="ri-checkbox-multiple-blank-fill"></i><br><span>Try Premium for ₹0</span></li>
+	</div>
+	
+	<hr>
+</nav>
+
+
+<nav class="nav_mobile">
+		<div class="nav_mobile_icon">
+			<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" style="width:40px; height:40px; border-radius:50%; ;">
+			<button style="width:380px; height:40px; border:1px solid grey; border-radius:25px; margin-left:20px ; margin-top:3px ; text-align:left; font-size:17px; padding:2px; "> Search </button>
+			<a style="color:black; text-decoration:none;" href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_message.html"><li style="list-style:none; margin-top:8px"> <i class="ri-message-3-fill" style="font-size:30px; margin-left:50px; color:grey; "></i> </li>
+		</div>
+</nav>
+
+<br><br><br>
+
+	
+
+<div class="main_div_home">
+	<section>
+		<div class="invisible-scrollbar">
+		
+		
+			
+			<div class="invisible-scrollbar_section_one">
+			
+				<div class="invisible-scrollbar_section_one_first">
+					<div class="invisible-scrollbar_section_one_first_div">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\profile.jpeg">
+					</div>
+				</div>
+				<br>
+				
+				<p class="paragraph_one"> <b>kashish Jain</b> </p>
+				<p class="paragraph_two">Pursuing B.Tech in Information Technology <br> at Chhatrapati Sambhaji..</p>
+				<p class="paragraph_two">Aurangabad, Maharashtra</p>
+				
+				<div class="invisible-scrollbar_section_one_second">	
+					<div class="invisible-scrollbar_section_one_second_div">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mgmjnec_logo.jpeg">
+					</div>
+					
+					<div class="invisible-scrollbar_section_one_second_div_1">
+						<b>  M.G.M's Jawaharlal Nehru <br> College Of Enginnering </b>
+					</div>
+				</div>	
+				
+			</div>
+			
+			
+			<br>
+			<div class="invisible-scrollbar_section_two">
+					
+				<div class="invisible-scrollbar_section_two_first">	
+					<div class="invisible-scrollbar_section_two_first_inner_1">
+						<b> Profile Viewers </b>
+					</div>
+					
+					<div class="invisible-scrollbar_section_two_first_inner_2">
+						<b style="">228</b>
+					</div>
+				</div>
+				
+				<br>
+				
+				<div  class="invisible-scrollbar_section_two_second">	
+					<div class="invisible-scrollbar_section_two_first_inner_1">
+						<b> Post Impression</b>
+					</div>
+					
+					<div class="invisible-scrollbar_section_two_first_inner_2">
+						<b>16</b>
+					</div>
+				</div>
+			
+			</div>
+			
+			
+			<br>
+
+			<div class="invisible-scrollbar_section_three">
+			
+				<div class="invisible-scrollbar_section_three_div">
+					<p class="invisible-scrollbar_section_three_p"> Access Exculsive tools & insight </p>
+					<p><b> Try premium for free </b></p>
+				</div>
+			
+			</div>
+			
+			
+			
+			<br>
+			<div class="invisible-scrollbar_section_four">
+				
+				<div class="invisible-scrollbar_section_four_div">	
+					<div  class="invisible-scrollbar_section_four_first">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\OIP.jpeg" >
+					</div>
+					
+					<div class="invisible-scrollbar_section_four_second">
+						<b>Saved items</b>
+					</div>
+				</div>
+				
+				<div class="invisible-scrollbar_section_four_div">	
+					<div class="invisible-scrollbar_section_four_first">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\OIP (1).jpeg">
+					</div>
+					
+					<div class="invisible-scrollbar_section_four_second">
+						<b>Groups</b>
+					</div>
+				</div>
+				
+				<div class="invisible-scrollbar_section_four_div">	
+					<div class="invisible-scrollbar_section_four_first">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\OIP (2).jpeg">
+					</div>
+					
+					<div class="invisible-scrollbar_section_four_second">
+						<b>Newsletters</b>
+					</div>
+				</div>
+				
+				<div class="invisible-scrollbar_section_four_div">	
+					<div class="invisible-scrollbar_section_four_first">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\OIP (3).jpeg">
+					</div>
+					
+					<div class="invisible-scrollbar_section_four_second">
+						<b>Events</b>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+
+
+
+
+
+
+
+
+		<div class="invisible-scrollbar-middle-part">
+		
+			<div class="invisible-scrollbar-middle-part-section-one">
+			
+					<div class="invisible-scrollbar-middle-part-div">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\174857.png">
+						<button> Search </button>
+					</div>
+					
+					<br>
+					
+					<div class="invisible-scrollbar-middle-part-div-1">
+						<div class="invisible-scrollbar-middle-part-div-1-1">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\video.jpeg">
+							<p> Video</p>
+						</div>
+						
+						
+						<div class="invisible-scrollbar-middle-part-div-1-2">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\photo.jpeg">
+							<p> Photo</p>
+						</div>
+						
+						
+						<div class="invisible-scrollbar-middle-part-div-1-2">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\write.jpeg">
+							<p> write article </p>
+						</div>
+					
+					</div>
+			</div>
+
+			<div class="invisible-scrollbar-middle-part-hr">
+				<hr>
+			</div>
+			
+			<div class="post_one">
+				
+				<div class="post_one_logo">
+					<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1756737461028.jpeg">
+					<p> <b>Vilas Bamanavat </b>  <br>Final year student BCS at DITMS| Aspiring Cyber Security | Passionate a <br> 3w. </p> 	
+				</div>
+				
+				<div class="one_info">
+					<p> Thrilled to share that I’ve successfully completed the API Security Fundamentals ’25 certification from APIsec University! 🚀	In this course, I gained hands-on knowledge of: <a href="#">....More </a></p>
+				</div>
+				
+				<div class="one_achivement">
+						<img class="main_post" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1764003750733.jpeg">
+					
+						<div class="one_comment">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\blue-like.jpeg">
+							<p>Vilas Bamanavat and 4 others  <span> 1 comment </span></p>
+						</div>
+						
+						<div class="one_achivement_hr">
+							<hr>
+						</div>
+						
+						
+						<div class="one_achivement_actions">
+							<div class="one_achivement_actions_like">
+								<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\like.jpeg">
+								<p> Like</p>
+							</div>
+							
+							
+							<div class="one_achivement_actions_">
+								<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\comment.jpeg">
+								<p> Comment</p>
+							</div>
+							
+							
+							<div class="one_achivement_actions_">
+								<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\repost1.jpeg">
+								<p> Repost</p>
+							</div>
+							
+							<div class="one_achivement_actions_">
+								<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\send.jpeg">
+								<p> Send </p>
+							</div>
+						</div>
+
+				</div>
+			</div>
+			
+			<br>
+			
+			<div class="post_two">
+				
+				<div class="post_two_logo">
+					<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1764817616022.jpeg">
+					<p> <b>Sanu Kumar</b>  <br>12K+ LinkedIn Followers| Developer @ IBM | AI Innovator |Generati...   <br> 1w.  </p> 
+						
+				</div>
+				
+				<div class="two_info">
+					<p class="two_info_p">🌟 Grateful & Proud Moment! 🌟 </p>
+				
+					<p> I'm excited to share that I've been recognized with 200 Bluepoints and an  <a href="#">....More </a>
+					</p>
+				</div>
+				
+				<div class="two_achivement">
+						<img class="two_main_post" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1764842861662.jpeg" >
+					
+						<div class="two_comment">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\blue-like.jpeg">
+							<p> 93<span class="two_comment_span"> 3 comment </span></p>
+						</div>
+						
+						<div class="two_achivement_hr">
+							<hr>
+						</div>
+						
+						
+					<div class="two_achivement_actions">
+						<div class="two_achivement_actions_like">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\like.jpeg">
+							<p> Like</p>
+						</div>
+						
+						
+						<div class="two_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\comment.jpeg">
+							<p> Comment</p>
+						</div>
+						
+						
+						<div class="two_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\repost1.jpeg">
+							<p> Repost</p>
+						</div>
+						
+						<div class="two_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\send.jpeg">
+							<p> Send </p>
+						</div>
+					
+					</div>
+
+				</div>
+			</div>
+					
+			<br>
+			
+			<div class="post_three">
+				
+				<div class="post_three_logo">
+					<img class="post_three_logo_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\greattrade_logo.jpeg">
+					 <p class="post_three_logo_p"> <b>GREAT Trade and Investment</b>  <br> 		Promoted  </p> 
+				</div>
+				
+				<div class="three_info">
+					<p> Get your free tailored guide with actionable steps to start a business in the UK .Grow<br> your business today </p>
+				</div>
+				
+				<div class="three_achivement">
+						<img class="main_post"  src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\EYB_PaidSocial_Ecosystempng.jpeg">
+					
+						<div class="three_comment">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\blue-like.jpeg">
+							<p> 165<span class="three_comment_span"> 1 comment </span></p>
+						</div>
+						
+						<div class="three_achivement_hr">
+							<hr>
+						</div>
+						
+						
+					<div class="three_achivement_actions">
+						<div class="three_achivement_actions_like">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\like.jpeg">
+							<p> Like</p>
+						</div>
+						
+						
+						<div class="three_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\comment.jpeg" >
+							<p> Comment</p>
+						</div>
+						
+						
+						<div class="three_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\repost1.jpeg">
+							<p> Repost</p>
+						</div>
+						
+						<div class="three_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\send.jpeg">
+							<p> Send </p>
+						</div>
+					
+					</div>
+
+				</div>
+			</div>
+			
+			<br>
+			
+			<div class="post_four" >
+				
+				<div class="post_four_logo">
+					<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\openai_logo.jpeg">
+					<p> <b>GREAT Trade and Investment</b>  <br> Promoted </p> 
+				</div>
+				
+				<div class="four_info">	
+					<p> Get your free tailored guide with actionable steps to start a business in the UK .Grow<br> your business today </p>
+				</div>
+				
+				<div class="four_achivement">
+						<img class="main_post" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\OAI_B2B_Codex_Eng-Leader-Message-1_1x1png.jpeg">
+					
+						<div class="four_comment">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\blue-like.jpeg">
+							<p> Gaurav Bhandari and 1413 others<span> 10 comments. 13 repost </span></p>
+						</div>
+						
+						<div class="four_achivement_hr">
+							<hr>
+						</div>
+						
+						
+					<div class="four_achivement_actions">
+						<div class="four_achivement_actions_like">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\like.jpeg">
+							<p> Like</p>
+						</div>
+						
+						
+						<div class="four_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\comment.jpeg">
+							<p> Comment</p>
+						</div>
+						
+						
+						<div  class="four_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\repost1.jpeg">
+							<p> Repost</p>
+						</div>
+						
+						<div  class="four_achivement_actions_">
+							<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\send.jpeg">
+							<p> Send </p>
+						</div>
+					
+					</div>
+
+				</div>
+			</div>
+			
+			<footer class="footer">
+				<div class="inner_footer">
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_home.html" ><li class="black_font_grey_one"><i class="ri-home-4-fill"></i><br><span>Home</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_network.html"><li class="black_font_grey_two"><i class="ri-group-3-fill" ></i><br> <span>My Network</span></li></a>
+					<a href="#"><li class="black_font_grey_four"><i class="ri-add-box-fill"></i><br> <span style="margin-left:10px;" >Post</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_notification.html" ><li class="black_font_grey_five"><i class="ri-notification-3-fill"></i><br><span>Notifications</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_job.html" ><li class="black_font_grey_three"><i class="ri-briefcase-4-fill" ></i><br><span>Jobs</span></li></a>
+					
+				</div>
+			</footer>
+	
+
+		</div>
+			
+	
+		
+		
+		<div class="side_bar">
+			
+			<div class="inner_first_side_bar">
+				<div class="heading_news">
+				
+					<p class="LinkedIn_news"><b>LinkedIn News</b></p>
+					<p class="LinkedIn_news_inner"> <b>Top Stories</b> </p>
+					
+					<p class="daily_news"><b>Ideas set to shape 2026 </b> </p>
+					<p class="inner_daily_news">7h ago • 1,303 readers</p>
+					
+					<p class="daily_news"><b>Small loans defaults increase </b> </p>
+					<p class="inner_daily_news">11h ago • 810 readers</p>
+					
+					
+					<p  class="daily_news"><b>Micro-dramas face major issues </b> </p>
+					<p class="inner_daily_news">10h ago • 539 readers</p>
+					
+					<p  class="daily_news"><b>What concerns India Inc </b> </p>
+					<p class="inner_daily_news">10h ago • 346 readers</p>
+					
+					<p  class="daily_news"><b>FMCG yet to see GST gains</b> </p>
+					<p  class="inner_daily_news">10h ago • 342</p>
+					
+					<p class="puzzle_heading"> LinkedIn puzzle spotlight </p>	
+					
+					<div class="puzzle_game">
+					
+						<div class="puzzle_block">
+							<img class="puzzle_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\3nbta1n5ale6ewdbbwf38ki6d.gif">
+						</div>
+						<div class="puzzle_block_info">
+							<p class="puzzle_block_info_p1"> Zip - a quick brain teaser </p>
+							<p class="puzzle_block_info_p2">Solve in 60s or less !</p>
+						</div>
+				
+					</div>
+	
+				</div>
+			</div>
+			
+			
+						
+			<br>
+			
+			
+			
+			<div class="inner_second_side_bar">
+				<center><p class="inner_second_side_bar_title"> Premium has a helped 3.2 million  memebers land a job 	<br>  in the past years </p></center>
+				
+				<div class="side_bar_profile">
+					<div class="side_bar_img">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\profile.jpeg">
+					</div>
+				
+					<div class="profile_content">
+						<p> Premium </p>
+					</div>
+				
+				</div>
+				<br>
+				<center><button> TRY FOR FREE </button></center>
+			</div>
+			
+			<br>
+		</div>
+	
+	</section> 
+
+</div>
+
+
+</body>
+</html>

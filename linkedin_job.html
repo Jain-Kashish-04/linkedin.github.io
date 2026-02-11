@@ -1,0 +1,800 @@
+<html>
+	<head>
+		<title>
+			LinkedIn Jobs
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		.body{
+			margin:0%; padding:0%;
+		}
+		
+		nav{
+			display:flex;
+			width:100%;
+			height:60px;
+			position:fixed;
+			z-index:5;
+			background-color:white;
+		}
+			
+		.nav-one{
+			width:30%; margin-left:200px; display:flex; margin-top:5px;
+		}
+		.nav-one img {
+			padding-top:0px; margin-right:10px;
+		}
+		
+		.nav-one button{
+			width:300px; height:40px; border-radius:50px ; text-align:left; font-size:17px;
+		}
+		.nav-two{
+			width:70%; margin-top:7px; display:flex;
+		}
+		.nav-two a{
+			color:black; text-decoration:none;
+		}
+		.nav-two .black_font_grey_one{
+			list-style:none;
+		}
+		
+		.nav-two .black_font_grey_two, .black_font_grey_four{
+			margin-left:20px; list-style:none; 
+		}
+		.nav-two .black_font_grey_three{
+			margin-left:28px; list-style:none;
+		}
+		
+		.nav-two .black_font_grey_five, .black_font_grey_six{
+			margin-left:22px; list-style:none;
+		}
+		.ri-home-4-fill{
+			font-size:23px; margin-left:6px; 
+		}
+		.ri-group-3-fill{
+			font-size:23px; margin-left:29px;
+		}
+		.ri-chat-1-fill{
+			font-size:23px; margin-left:19px;
+		}
+		.ri-briefcase-4-fill{
+			font-size:23px;
+		}
+		.ri-notification-3-fill {
+			font-size:23px; margin-left:22px;
+		}
+		.black_font_grey_six  img{
+			border-radius:25px; width:23px; height:22px; 
+		}
+		.black_font_grey_seven, .black_font_grey_eight{
+			margin-left:22px; list-style:none;
+		}
+		.ri-grid-fill{
+			font-size:23px; margin-left:25px;
+		}
+		.black_font_grey_eight  i{
+			color:goldenrod; font-size:23px; margin-left:45px;
+		}
+		.nav_hr  hr{
+			height:40px;  margin-left:10px; margin-top:0px;
+		}
+		
+		
+		.invisible-scrollbar::-webkit-scrollbar {
+		    display: none;
+		}
+		
+		.main_section{
+			background-color:#f9f4f1;
+		}
+		.main_div{
+			display:flex; width:100%; 
+		}
+		.side_bar{
+			width:30%; margin-left:50px; margin-top:70px;
+		}
+		.invisible-scrollbar{
+			width:320px; height:600px; border-radius:10px; padding:10px; position:fixed; margin-left:30px;
+		}
+		.first_block{
+			border:1px solid #cbcbcb ;height:280px; border-radius:10px; background-color:white;
+		}
+		.profile-pic{
+			position:relative;background: #456a82;background: linear-gradient(90deg, rgba(69, 106, 130, 1) 0%, rgba(84, 113, 140, 1) 50%, rgba(214, 241, 255, 1) 100%); height:80px; margin:0%; padding:0%; border-radius:8px; 
+		}
+		.profile-pic-img{
+			position:absolute ; top:35px; left:30px;
+		}
+		.profile-pic-img  img {
+			width:77px ;height:80px; border-radius:50%; border:3px solid white;
+		}
+		.first_block_p1{
+			margin-top:34px; font-size:22px ; margin-left:20px; height:5px;
+		}
+		.first_block_p2{
+			font-size:15px;margin-left:20px; height:26px; 
+		}
+		.first_block_p3{
+			font-size:15px;margin-left:20px; color:grey;
+		}
+		.info{
+			display:flex;
+		}
+		.mgmjnec_logo{
+			width:14%; height:60px; margin-left:15px;
+		}
+		.mgmjnec_logo  img{
+			 height:39px ;width:37px;border-radius:100%;
+		}
+		.logo_info{
+			width:80%;height:60px; margin-left:0px; font-size:15px;
+		}
+		.second_block{
+			border: 1px solid #cbcbcb; height:200px; border-radius:10px; background-color:white;
+		}
+		.options{
+			display:flex; font-size:18px; margin-top:20px; margin-left:20px;
+		}
+		.icon{
+			width:15%; 
+		}
+		.icon_name{
+			width:85%;
+		}
+		.black_font_grey{
+			list-style:none; 
+		}
+		.second_block  a{
+			text-decoration:none; color:blue;
+		}
+		.ri-bookmark-fill , .ri-list-check{
+			margin-left:10px;
+		}
+		.ri-edit-line{
+			color:blue;
+		}
+		.ri-checkbox-multiple-blank-fill{
+			color:goldenrod; margin-left:10px;
+		}
+		.middle_bar{
+			width:60%; position:auto; margin-top:80px; 
+		}
+		.middle_bar_first_block{
+			border: 1px solid #cbcbcb ;height:150px; padding:2px; border-radius:10px; background-color:white; width:900px;
+		}
+		.main_middle_first_bar{
+			display:flex; height:100px;
+		}
+		.main_middle_first_bar_div_one{
+			width:80%;
+		}
+		
+		
+		.main_middle_first_bar_div_one_p1{
+			font-size:20px; height:5px; margin-left:12px;
+		 }
+		 .main_middle_first_bar_div_one_p2{
+			font-size:17px; color:grey ; margin-left:12px;
+		 }
+		.main_middle_first_bar_div_two{
+			 style="width:20%;
+		}
+		.main_middle_first_bar_div_two  img{
+			width:76px; height:76px ;border-radius:50%; margin-top:42px;
+		}
+		.middle_bar_first_block_btn1{
+			  margin-left:10px;  border-radius:25px; color:white; background-color:blue; border:1px solid blue; height:32px; padding:2px; width:120px;
+		}
+		.middle_bar_first_block_btn2{
+			 margin-left:10px; border-radius:25px;  border:1px solid black ; height:32px; padding:2px; width:150px;
+		}
+		.middle_bar_second_block{
+			border: 1px solid #cbcbcb ; height:410px; padding:5px; border-radius:10px; background-color:white; width:900px;
+		}
+		.middle_bar_second_block_p1{
+			 font-size:20px; height:5px; margin-left:12px;
+		}
+		.middle_bar_second_block_p2{
+			 font-size:17px; color:grey ;  margin-left:12px;
+		}
+		.top_jobs{
+			display:flex;
+		}
+		.top_job_1{
+			 width:90%;
+		}
+		.inner_div_top_job_1{
+			display:flex;
+		}
+		.top_job_img{
+			width:6%; margin-left:15px;
+		}
+		.top_job_img  img{
+			width:50px; height:50px ; border-radius:10px;
+		}
+		.top_job_info{
+			width:80%;
+		}
+		.top_job_info_p1{
+			font-size:18px; height:5px; margin-left:12px; color:#29b2e4; margin-top:0px;
+		}
+		.top_job_info_p2{
+			font-size:16px; height:5px; margin-left:12px;
+		}
+		.top_job_info_p3{
+			 font-size:14px; color:grey ;  margin-left:12px;
+		}
+		.top_job_info_p4{
+			font-size:16px; color:grey ; height:5px; margin-left:12px;
+		}
+		.middle_bar_third_block{
+			border: 1px solid #cbcbcb ; height:350px; padding:5px; border-radius:10px; background-color:white; width:900px;
+		}
+		.middle_bar_third_block_heading{
+			font-size:20px; height:25px; margin-left:12px;
+		}
+		.job_collection{
+			display:flex; height:40px;
+		}
+		.job_collection_img{
+			width:30px;height:30px; margin-left:10px; border-radius:5px; 
+		}
+		.job_collection a{
+			text-decoration:none; font-size:17px; margin-left:10px; margin-top:7px;
+		}
+		.span{
+			color:green ;
+		}
+		.middle_bar_fourth_block{
+			border: 1px solid #cbcbcb ; height:470px; padding:5px; border-radius:10px; background-color:white; width:900px;
+		}
+		.middle_bar_fourth_block_p1{
+			font-size:20px; height:10px; margin-left:12px;
+		}
+		.middle_bar_fourth_block_p2{
+			font-size:17px; color:grey;  height:25px; margin-left:12px;
+		}
+		.nav_mobile{
+			display:none;
+		}
+		.footer{
+			display:none;
+		}
+		
+		
+		
+		/* for mobile version */
+		@media screen and (max-width: 750px){
+			nav{
+				display:none;
+			}
+			.side_bar{
+				display:none;
+			}
+			.middle_bar_first_block{
+				display:none;
+			}
+			.middle_bar{
+				margin-left:0;
+				padding-left:0;
+				
+			}
+			.middle_bar_second_block{
+				width:520px;
+				margin-left:5px;
+				height:430px;
+			}
+			.middle_bar_third_block{
+				width:520px;
+				margin-left:5px;
+				
+			}
+			.middle_bar_fourth_block{
+				width:520px;
+				margin-left:5px;
+				height:526px;
+			}
+			.nav_mobile{
+				display:block;
+				
+			}
+			.nav_mobile_icon{
+				padding:7px;
+				display:flex;
+			}
+			.footer{
+				display:block;
+				background-color:white;
+				margin-top:10px;
+				width:950px;
+				
+				position:fixed;
+				bottom:0;
+				
+			}
+			.inner_footer{
+				width:70%; margin-top:7px; display:flex;
+			}
+			.footer a{
+				color:black; text-decoration:none;
+			}
+			.footer .black_font_grey_one{
+				list-style:none;
+				margin-left:34px;
+				color:grey;
+			}
+			
+			.footer .black_font_grey_two{
+				margin-left:50px; list-style:none; color:grey;
+			}
+			.footer .black_font_grey_three{
+				margin-left:50px; list-style:none;color:grey;
+			}
+			
+			.footer .black_font_grey_five{
+				margin-left:50px; list-style:none;color:grey;
+			}
+			.footer  .black_font_grey_four{
+				margin-left:50px; list-style:none;color:grey;
+			}
+			.ri-home-4-fill{
+				font-size:23px; margin-left:6px;
+			}
+			.ri-group-3-fill{
+				font-size:23px; margin-left:35px;
+			}
+
+			.ri-briefcase-4-fill{
+				font-size:23px;
+			}
+			.ri-notification-3-fill {
+				font-size:23px; margin-left:28px;
+			}
+			.ri-add-box-fill{
+				font-size:23px; margin-left:11px;
+			}
+			.top_job_info_p1, .top_job_info_p2, .top_job_info_p3 ,.top_job_info_p4{
+				margin-left:30px;
+			}
+			.top_job_info_p1{
+				width:150%;
+				font-size:16px;
+			}
+			.middle_bar_second_block_p2 ,.middle_bar_fourth_block_p2{
+				width:614px;
+				font-size:15px;
+			}
+			
+
+		
+		}
+		
+		
+		
+		
+		
+		
+		</style>
+		<link rel="styelsheet"  href="" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	
+<body class="body">
+	<nav>
+		<div class="nav-one">
+			<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\174857.png" width="35px"  height="35px">
+			<button> Search </button>
+		</div>
+		
+		<div class="nav-two">
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_home.html" ><li class="black_font_grey_one"><i class="ri-home-4-fill"></i><br><span>Home</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_network.html"><li class="black_font_grey_two"><i class="ri-group-3-fill" ></i><br> <span>My Network</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_job.html" ><li class="black_font_grey_three"><i class="ri-briefcase-4-fill" ></i><br><span>Jobs</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_message.html"><li class="black_font_grey_four"><i class="ri-chat-1-fill"></i><br><span>Messaging</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_notification.html" ><li class="black_font_grey_five"><i class="ri-notification-3-fill"></i><br><span>Notifications</span></li></a>
+			<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin.html"><li class="black_font_grey_six"><img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" class="profile-pic"><br><span> Me </span><i class="ri-arrow-down-s-fill"></i></li></a>
+			
+			
+			<div class="nav_hr">
+				<hr>
+			</div>
+			
+			<li class="black_font_grey_seven"><i class="ri-grid-fill"></i><br><span>For Business</span> <i class="ri-arrow-down-s-fill"></i></li>
+			<li class="black_font_grey_eight"><i class="ri-checkbox-multiple-blank-fill"></i><br><span>Try Premium for ₹0</span></li>
+		</div>
+		
+		<hr>
+	</nav>
+	
+	<nav class="nav_mobile">
+		<div class="nav_mobile_icon">
+			<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg" style="width:40px; height:40px; border-radius:50%; ;">
+			<button style="width:380px; height:40px; border:1px solid grey; border-radius:25px; margin-left:20px ; margin-top:3px ; text-align:left; font-size:17px; padding:2px; "> Search </button>
+			<a style="color:black; text-decoration:none;" href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_message.html"><li style="list-style:none; margin-top:8px"> <i class="ri-message-3-fill" style="font-size:30px; margin-left:50px; color:grey; "></i> </li>
+		</div>
+	</nav>
+
+
+
+	
+<section class="main_section">
+<div class="main_div">
+
+	<div class="side_bar">
+		<div class="invisible-scrollbar">
+
+			<div class="first_block">
+				
+				<div class="profile-pic">
+					<div class="profile-pic-img">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\profile.jpeg">
+					</div>
+				</div>
+				<br>
+				
+				<p class="first_block_p1"> <b>kashish Jain</b> </p>
+				<p class="first_block_p2">Pursuing B.Tech in Information Technology  at <br>  Chhatrapati Sambhaji  nagar Institude passionate..</p>
+				<p class="first_block_p3">Aurangabad, Maharashtra</p>
+				
+				<div class="info">	
+					<div class="mgmjnec_logo">
+						<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mgmjnec_logo.jpeg">
+					</div>
+					
+					<div class="logo_info">
+						<b> M.G.M's Jawaharlal Nehru College Of <br>Enginnering </b>
+					</div>
+				</div>	
+				
+			</div>
+			<br>
+			
+			
+			
+			<div class="second_block">
+				
+				<div class="options">	
+					<div class="icon">
+						<li class="black_font_grey"><i class="ri-list-check"></i></li> 
+					</div>
+					
+					<div class="icon_name">
+						<b> Preferences </b>
+					</div>
+				</div>
+				
+				
+				<div class="options">	
+					<div class="icon">
+							
+						<li class="black_font_grey"><i class="ri-bookmark-fill"></i></li> 
+					</div>
+					
+					<div class="icon_name">
+						<b> My jobs </b>
+					</div>
+				</div>
+				
+				
+				<div class="options">	
+					<div class="icon">
+						<li class="black_font_grey"><i  class="ri-checkbox-multiple-blank-fill"></i></li> 
+					</div>
+					
+					<div class="icon_name">
+						<b>My Career Insights  </b>
+					</div>
+				</div>
+				
+				<hr>
+			
+				<div class="options">	
+					<div class="icon">
+						<li class="black_font_grey"><i class="ri-edit-line"></i></li> 
+					</div>
+					
+					<div class="icon_name">
+						<a href=""><b>Post a free jobs </b></a>
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>		
+	</div>
+		
+	
+	
+	
+		
+		
+<div class="middle_bar">
+		
+		<div class="middle_bar_first_block">
+			<div class="main_middle_first_bar">
+			
+				<div class="main_middle_first_bar_div_one">
+					<p class="main_middle_first_bar_div_one_p1"><b> Hi kashish, are you hiring?  </b></p>
+					<p class="main_middle_first_bar_div_one_p2"> Post a free job and add the #hiring frame to your profile to make a hire, fast.</p> 
+				</div>
+				
+				<div class="main_middle_first_bar_div_two">
+					<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1758128965359.jpeg"> 
+				</div>
+			</div>
+			
+			<div>
+				<button class="middle_bar_first_block_btn1"> <b> Yes, I'm hiring  </b></button>	
+				<button class="middle_bar_first_block_btn2"> No, not right now  </button>	
+			</div>
+		</div>
+		<br>
+			
+		
+		
+		<div class="middle_bar_second_block">
+					<p class="middle_bar_second_block_p1"><b> Top job picks for you  </b></p>
+					<p class="middle_bar_second_block_p2"> Based on your profilr, preferences,and activity like applies,searches,and saves </p> 
+					
+					
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\soul_ai_logo.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b> HTML/CSS Developer </b></p>
+									<p class="top_job_info_p2"> Soul AI. Bengaluru (Remote)</p> 
+									<p class="top_job_info_p3"> Promoted </p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+					<hr>
+					
+					
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1711638601638.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b> PHP Developer (Freshers) </b></p>
+									<p class="top_job_info_p2">Tek Support .Delhi ,India (Remote)</p> 
+									<p class="top_job_info_p4"> Actively reviewing applications </p> 
+									<p class="top_job_info_p3"> Promoted . Easy Apply  </p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+					<hr>
+					
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\careercartz_logo.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b> High - Demand Skills for work from Home jobs in Chennai  </b></p>
+									<p class="top_job_info_p2"> careercartz . Patel Nagar (Remote)</p> 
+									<p class="top_job_info_p3"> 7 months ago </p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+					<hr>
+					
+					<center> Show All </center>
+		</div>
+		<br>
+		
+		
+		
+		<div  class="middle_bar_third_block">
+				<p class="middle_bar_third_block_heading"><b> Explore with job collections </b></p>
+					
+				<div class="job_collection">
+						<img class="job_collection_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\easy.png"><a> Easy Apply </a>
+						<img class="job_collection_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\goverment.png"><a> Goverment </a>
+						<img class="job_collection_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\part.png" ><a> Part-Time </a>
+						<img class="job_collection_img" src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\more.png" ><a> More </a>
+				</div>
+				<hr>
+				
+				
+				
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\edulinkup_logo.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b>Frontend Developer Intern  </b></p>
+									<p class="top_job_info_p2"> EduLinkUp. India (Remote)</p> 
+								
+									<p class="top_job_info_p3">43 minutes ago. <span class="span"> <b>Be an early Applicant </b></span> . Easy Apply  </p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+					<hr>
+					
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\sprinto_com_logo.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b>Fullstack Intern </b></p>
+									<p class="top_job_info_p2"> Sprinto . Bengaluru (Remote)</p> 
+									<p class="top_job_info_p4"> Actively reviewing applications</p>
+									<p class="top_job_info_p3"> Promoted . Easy Apply </p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+					<hr>
+					
+					<center> Show All </center>
+		</div>
+		<br>
+		
+		
+		<div class="middle_bar_fourth_block">
+					<p class="middle_bar_fourth_block_p1"><b>More jobs for you </b></p>
+					<p class="middle_bar_fourth_block_p2" > Based on your profile, Preferences, and activity like applies , searches , and saves </p>
+					
+	
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\weareuplers_logo.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b>Senior DevOps/Backend Engineer</b></p>
+									<p class="top_job_info_p2">Uplers . Faridabad (Hybrid)</p> 
+								
+									<p class="top_job_info_p3">1 week ago.<span class="span"> <b>Be an early Applicant </b></span></p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+					<hr>
+					
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div  class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\mindrift_ai_logo.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b>Freelance Software Developer (Ruby) - AI Trainer </b></p>
+									<p class="top_job_info_p2"> Mindrift . Ahemdabad (Remote)</p> 
+									<p class="top_job_info_p3">1 week ago.<span class="span"> <b>Be an early Applicant </b></span> . Easy Apply  </p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+					<hr>
+					
+					
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\copilotkit_logo.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b>Grwoth Engineer Intern </b></p>
+									<p class="top_job_info_p2"> CopilotKit . India (Remote)</p>
+									<p class="top_job_info_p4"> Actively reviewing applications</p>									
+									<p class="top_job_info_p3">  Promoted .  Easy Apply  </p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+					<hr>
+					
+					
+					<div class="top_jobs">
+					
+						<div class="top_job_1">
+							<div class="inner_div_top_job_1">
+								<div class="top_job_img">
+									<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\media-query\images\1763203820614.jpeg">
+								</div>
+								
+								<div class="top_job_info">
+									<p class="top_job_info_p1"><b> Junior Software Engineer  </b></p>
+									<p class="top_job_info_p2"> SPK . India (Remote)</p>
+									<p class="top_job_info_p4"> Actively reviewing applications</p>									
+									<p class="top_job_info_p3">  Promoted .  Easy Apply  </p>
+								</div>
+							</div>
+						</div>
+						
+						<!--<div style="width:6%">
+							<p style="font-size:14px; "><b> gu </b></p>
+						</div>-->
+
+					</div>
+				
+		</div>
+	<footer class="footer">
+				<div class="inner_footer">
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_home.html" ><li class="black_font_grey_one"><i class="ri-home-4-fill"></i><br><span>Home</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_network.html"><li class="black_font_grey_two"><i class="ri-group-3-fill" ></i><br> <span>My Network</span></li></a>
+					<a href="#"><li class="black_font_grey_four"><i class="ri-add-box-fill"></i><br> <span style="margin-left:10px;" >Post</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_notification.html" ><li class="black_font_grey_five"><i class="ri-notification-3-fill"></i><br><span>Notifications</span></li></a>
+					<a href="file:///C:/Users/Kashish/OneDrive/Desktop/CSS%20versatile/media-query/Linkedin/linkedin_job.html" ><li class="black_font_grey_three"><i class="ri-briefcase-4-fill" ></i><br><span>Jobs</span></li></a>
+					
+				</div>
+	</footer>
+				
+</div>			
+</div>
+</section>	
+</body>	
+</html>
